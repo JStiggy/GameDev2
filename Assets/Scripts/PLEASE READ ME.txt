@@ -1,0 +1,35 @@
+Version 1.0
+
+The game manager is a prefab that should be added to all scenes. If the Gamemanager already exists it 
+will delete the copy in the new scene, so redundancy will not cause any issues.
+
+In order to access the current Gamemanager you can use 
+GameManager.manager.WHATEVERISINGAMEMANAGER
+
+So to decrease the player energy use 
+GameManager.manager.DecreaseEnergy(4f);
+
+To save the game you would do 
+GameManager.manager.playerData.Save();
+
+Do note that playerData.Load() returns the save file, NO DATA CAN BE SAVED IF YOU DON'T USE THIS PROPERLY
+
+Spawn the player at the specified location, Can use playerData.xSavePosition and ySavePosition to spawn at save point Assuming the right scene is loaded.
+This also gives a global reference to the player via GameManager.manager.playerReference. 
+GameManager.manager.SpawnPlayer(float xPos, float yPos);
+
+Respawn the Player and reload save data, Call this on death.
+GameManager.manager.ReloadGame()
+
+Place the player at a position on the map
+GameManager.manager.PlacePlayer(xPos, yPos)
+
+Essentially, the GameManager is the place any major function should be placed. Saving, loading, gameover, scene transtion etc.
+
+Note: While saves can be updated between versions (Adding new variables to the save data), adding support for active
+      development versions would be wasteful. To create a new version of the save data, delete player.dat in the Data folder
+
+FAQ:
+
+I just got "SerializationException: No element named saveXPosition could be found." What do?
+ - Delete player.dat, If we are using SaveVersion at this point, notify me.
