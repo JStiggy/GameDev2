@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using System.Reflection;
 
-[Serializable ()]
+[Serializable()]
 public class SaveData : ISerializable
 {
     public int version = 1;
@@ -16,6 +16,16 @@ public class SaveData : ISerializable
     public string saveScene = "Test";
     public float saveXPosition = 1f;
     public float saveYPosition = 1f;
+
+    public int[,] mapData = new int[5, 5]
+    {
+        { 0,0,0,0,0},
+        { 0,0,0,0,0},
+        { 0,0,0,0,0},
+        { 0,0,0,0,0},
+        { 0,0,0,0,0}
+    };
+
 
     public SaveData() {}
 
@@ -27,7 +37,7 @@ public class SaveData : ISerializable
         saveScene = (string)info.GetValue("saveScene", typeof(string));
         saveXPosition = (float)info.GetValue("saveXPosition", typeof(float));
         saveYPosition = (float)info.GetValue("saveYPosition", typeof(float));
-
+        mapData = (int[,])info.GetValue("mapData", typeof(int[,]));
         //Example of Save Data updating between versions, WILL NOT BE USED UNTIL NEAR BETA/ALPHA phase
         //if (version == 2)
 
@@ -48,6 +58,7 @@ public class SaveData : ISerializable
         info.AddValue("saveScene", (saveScene));
         info.AddValue("saveXPosition", (saveXPosition));
         info.AddValue("saveYPosition", (saveYPosition));
+        info.AddValue("mapData", (mapData));
     }
 
     public void Save()

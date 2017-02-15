@@ -76,4 +76,9 @@ public class GameManager : MonoBehaviour
             print("Game Over: things go here");
         }
     }
+
+    public void DrawMap()
+    {
+
+    }
 }
