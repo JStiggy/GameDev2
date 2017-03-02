@@ -1,0 +1,23 @@
+ <DialougeData>
+ 	<Dialouges>
+    
+    //Copy from here to the /dialouge tag in order to add more dialouge to the game
+ 		<Dialouge>
+      //Each
+      <text>
+        //First box to display, Note: an enter is added so that it displays in with a newline
+        <text>You are Robot
+Your mission be robot</text>
+        
+        //Second box displayed
+        <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi vitae porta tortor, eu maximus magna.</text>
+      </text>
+      
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 5 </autoScroll>
+    </Dialouge>
+
+  </Dialouges>
+ </DialougeData>

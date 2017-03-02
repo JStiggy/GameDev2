@@ -23,7 +23,6 @@ public class Magnetizable : MonoBehaviour {
             Vector3 movementPosition = this.transform.position;
             foreach (Collider2D col in Physics2D.OverlapCircleAll(this.transform.position, magneticRadius, 1<<9))
             {
-                print("Update");
                 if (distance > Vector3.Distance(transform.position, col.transform.position))
                 {
                     distance = Vector3.Distance(transform.position, col.transform.position);
@@ -32,8 +31,7 @@ public class Magnetizable : MonoBehaviour {
             }
             if(movementPosition != this.transform.position)
             {
-                print("Force added");
-                rb.AddForce((movementPosition - transform.position).normalized * Time.deltaTime * force,ForceMode2D.Impulse);
+                rb.AddForce(((movementPosition - transform.position).normalized)/distance * Time.deltaTime * force,ForceMode2D.Impulse);
             }
         }
 	}
