@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        SceneManager.sceneLoaded += FadeIn;
         if (manager != this && manager != null)
         {
             Destroy(this.gameObject);
@@ -75,6 +76,24 @@ public class GameManager : MonoBehaviour
         {
             print("Game Over: things go here");
         }
+    }
+
+    public void FadeIn(Scene scene, LoadSceneMode lsm)
+    {
+        object[] tmp = { -1, null };
+        GetComponent<FadeSystem>().StartCoroutine("PerformFade", tmp);
+    }
+
+    public void FadeOut(string scene)
+    {
+        object[] tmp = { 1, scene};
+        GetComponent<FadeSystem>().StartCoroutine("PerformFade", tmp);
+    }
+
+    public void SpriteFade(bool fadeIn, GameObject obj)
+    {
+        object[] tmp = { obj, fadeIn};
+        GetComponent<FadeSystem>().StartCoroutine("PerformSpriteFade",tmp);
     }
 
     public void DrawMap()

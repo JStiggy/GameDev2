@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: 508d2c010d0e6c94ead1c9aacba80bc1
+timeCreated: 1488742416
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: elevatordoor_0
+    21300002: elevatordoor_1
+    21300004: elevatordoor_2
+    21300006: elevatordoor_3
+    21300008: elevatordoor_4
+    21300010: elevatordoor_5
+    21300012: elevatordoor_6
+    21300014: elevatordoor_7
+    21300016: elevatordoor_8
+    21300018: elevatordoor_9
+    21300020: elevatordoor_10
+    21300022: elevatordoor_11
+    21300024: elevatordoor_12
+    21300026: elevatordoor_13
+    21300028: elevatordoor_14
+    21300030: elevatordoor_15
+    21300032: elevatordoor_16
+    21300034: elevatordoor_17
+    21300036: elevatordoor_18
+    21300038: elevatordoor_19
+    21300040: elevatordoor_20
+    21300042: elevatordoor_21
+    21300044: elevatordoor_22
+    21300046: elevatordoor_23
+    21300048: elevatordoor_24
+    21300050: elevatordoor_25
+    21300052: elevatordoor_26
+    21300054: elevatordoor_27
+    21300056: elevatordoor_28
+    21300058: elevatordoor_29
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elevatordoor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_3
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_4
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_5
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_6
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_7
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_8
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_9
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_10
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_11
+      rect:
+        serializedVersion: 2
+        x: 4840
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_12
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_13
+      rect:
+        serializedVersion: 2
+        x: 5720
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_14
+      rect:
+        serializedVersion: 2
+        x: 6160
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_15
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_16
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_17
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_18
+      rect:
+        serializedVersion: 2
+        x: 7920
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_19
+      rect:
+        serializedVersion: 2
+        x: 8360
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_20
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_21
+      rect:
+        serializedVersion: 2
+        x: 9240
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_22
+      rect:
+        serializedVersion: 2
+        x: 9680
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_23
+      rect:
+        serializedVersion: 2
+        x: 10120
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_24
+      rect:
+        serializedVersion: 2
+        x: 10560
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_25
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_26
+      rect:
+        serializedVersion: 2
+        x: 11440
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_27
+      rect:
+        serializedVersion: 2
+        x: 11880
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_28
+      rect:
+        serializedVersion: 2
+        x: 12320
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: elevatordoor_29
+      rect:
+        serializedVersion: 2
+        x: 12760
+        y: 0
+        width: 440
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
