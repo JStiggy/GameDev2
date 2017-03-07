@@ -8,6 +8,8 @@ public class Elevator : MonoBehaviour {
     bool playerFade = true;
     GameObject player = null;
     public string nextScene;
+    public float nextXPos = 0;
+    public float nextYPos = 0;
 
     void OnEnable()
     {
