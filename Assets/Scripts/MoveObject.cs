@@ -10,11 +10,6 @@ public class MoveObject : MonoBehaviour {
     Vector3 locationB;
     bool aStart = true;
 
-    void Awake()
-    {
-        StartCoroutine("MoveLocation");
-    }
-
     public IEnumerator MoveLocation()
     {
         locationA = transform.GetChild(0).position;

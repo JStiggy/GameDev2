@@ -10,11 +10,11 @@ public class MappingSystem : MonoBehaviour {
 
     private int[,] mapData = new int[5, 5]
     {
-        {  0, 1, 1, 2, -1},
-        {  3, 4, 4, 5, -1},
-        { -1,-1, 9, 5, -1},
-        { -1,-1, 7, 8, -1},
-        { -1,-1,-1,-1, -1}
+        {-1,-1,-1,-1,-1},
+        { 0, 2,-1,-1,-1},
+        { 6, 8,-1,-1,-1},
+        {-1,-1, 7, 8,-1},
+        {-1,-1,-1,-1,-1}
     };
 
     private Image[] uiIcons;
@@ -53,7 +53,7 @@ public class MappingSystem : MonoBehaviour {
         {
             for (int j = 0; j < 5; ++j)
             {
-                if(GameManager.Manager.playerData.mapData[i,j] == 1 && uiIcons[count] != null)
+                if(GameManager.Manager.playerData.mapData[i,j] == 1 && uiIcons[count] != null && mapData[i,j] != -1)
                 {
                     uiIcons[count].sprite = mapTextures[mapData[i,j]];
                     uiIcons[count].gameObject.SetActive(true);
