@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c6ea5570cbb95a044b8242cb6af15dd8
-timeCreated: 1488933929
+timeCreated: 1488942879
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -133,10 +133,10 @@ TextureImporter:
       name: walkleftSheet_0
       rect:
         serializedVersion: 2
-        x: 107
-        y: 723
-        width: 236
-        height: 663
+        x: 0
+        y: 667
+        width: 116
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: walkleftSheet_1
       rect:
         serializedVersion: 2
-        x: 610
-        y: 723
-        width: 229
-        height: 663
+        x: 267
+        y: 662
+        width: 128
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: walkleftSheet_2
       rect:
         serializedVersion: 2
-        x: 1122
-        y: 723
-        width: 206
-        height: 663
+        x: 578
+        y: 662
+        width: 137
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: walkleftSheet_3
       rect:
         serializedVersion: 2
-        x: 1602
-        y: 723
-        width: 244
-        height: 663
+        x: 889
+        y: 662
+        width: 151
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: walkleftSheet_4
       rect:
         serializedVersion: 2
-        x: 2129
-        y: 723
-        width: 190
-        height: 663
+        x: 1200
+        y: 662
+        width: 169
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +198,10 @@ TextureImporter:
       name: walkleftSheet_5
       rect:
         serializedVersion: 2
-        x: 2640
-        y: 723
-        width: 175
-        height: 663
+        x: 1506
+        y: 662
+        width: 187
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +211,10 @@ TextureImporter:
       name: walkleftSheet_6
       rect:
         serializedVersion: 2
-        x: 3151
-        y: 723
-        width: 153
-        height: 663
+        x: 1818
+        y: 662
+        width: 204
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: walkleftSheet_7
       rect:
         serializedVersion: 2
-        x: 3601
-        y: 723
-        width: 252
-        height: 663
+        x: 2129
+        y: 662
+        width: 217
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: walkleftSheet_8
       rect:
         serializedVersion: 2
-        x: 4158
-        y: 723
-        width: 145
-        height: 663
+        x: 2440
+        y: 662
+        width: 235
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: walkleftSheet_9
       rect:
         serializedVersion: 2
-        x: 4608
-        y: 723
-        width: 237
-        height: 663
+        x: 2746
+        y: 662
+        width: 240
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: walkleftSheet_10
       rect:
         serializedVersion: 2
-        x: 5104
-        y: 723
-        width: 252
-        height: 663
+        x: 3057
+        y: 662
+        width: 245
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: walkleftSheet_11
       rect:
         serializedVersion: 2
-        x: 5616
-        y: 723
-        width: 228
-        height: 663
+        x: 3368
+        y: 662
+        width: 245
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: walkleftSheet_12
       rect:
         serializedVersion: 2
-        x: 6127
-        y: 723
-        width: 206
-        height: 663
+        x: 3679
+        y: 662
+        width: 245
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: walkleftSheet_13
       rect:
         serializedVersion: 2
-        x: 6607
-        y: 723
-        width: 245
-        height: 663
+        x: 3986
+        y: 662
+        width: 253
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: walkleftSheet_14
       rect:
         serializedVersion: 2
-        x: 7164
-        y: 723
-        width: 130
-        height: 663
+        x: 4297
+        y: 662
+        width: 253
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: walkleftSheet_15
       rect:
         serializedVersion: 2
-        x: 7637
-        y: 723
-        width: 191
-        height: 663
+        x: 4608
+        y: 662
+        width: 254
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: walkleftSheet_16
       rect:
         serializedVersion: 2
-        x: 8111
-        y: 723
-        width: 244
-        height: 663
+        x: 4919
+        y: 662
+        width: 245
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +354,10 @@ TextureImporter:
       name: walkleftSheet_17
       rect:
         serializedVersion: 2
-        x: 8645
-        y: 723
-        width: 183
-        height: 663
+        x: 5226
+        y: 662
+        width: 235
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +367,10 @@ TextureImporter:
       name: walkleftSheet_18
       rect:
         serializedVersion: 2
-        x: 9110
-        y: 723
-        width: 252
-        height: 663
+        x: 5537
+        y: 662
+        width: 222
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,10 +380,10 @@ TextureImporter:
       name: walkleftSheet_19
       rect:
         serializedVersion: 2
-        x: 9652
-        y: 723
-        width: 168
-        height: 663
+        x: 5848
+        y: 662
+        width: 209
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +393,10 @@ TextureImporter:
       name: walkleftSheet_20
       rect:
         serializedVersion: 2
-        x: 10110
-        y: 723
-        width: 251
-        height: 663
+        x: 6159
+        y: 662
+        width: 196
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,10 +406,10 @@ TextureImporter:
       name: walkleftSheet_21
       rect:
         serializedVersion: 2
-        x: 10659
-        y: 723
-        width: 153
-        height: 663
+        x: 6470
+        y: 662
+        width: 187
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: walkleftSheet_22
       rect:
         serializedVersion: 2
-        x: 11170
-        y: 723
-        width: 122
-        height: 663
+        x: 6777
+        y: 662
+        width: 178
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,10 +432,10 @@ TextureImporter:
       name: walkleftSheet_23
       rect:
         serializedVersion: 2
-        x: 11674
-        y: 723
-        width: 129
-        height: 663
+        x: 7088
+        y: 662
+        width: 164
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,10 +445,10 @@ TextureImporter:
       name: walkleftSheet_24
       rect:
         serializedVersion: 2
-        x: 12162
-        y: 723
-        width: 145
-        height: 663
+        x: 7399
+        y: 662
+        width: 151
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: walkleftSheet_25
       rect:
         serializedVersion: 2
-        x: 12666
-        y: 723
-        width: 137
-        height: 663
+        x: 7706
+        y: 662
+        width: 146
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,10 +471,10 @@ TextureImporter:
       name: walkleftSheet_26
       rect:
         serializedVersion: 2
-        x: 13108
-        y: 723
-        width: 252
-        height: 663
+        x: 8017
+        y: 662
+        width: 133
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: walkleftSheet_27
       rect:
         serializedVersion: 2
-        x: 13604
-        y: 723
-        width: 259
-        height: 663
+        x: 8328
+        y: 662
+        width: 120
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -497,10 +497,10 @@ TextureImporter:
       name: walkleftSheet_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 122
-        height: 655
+        x: 8639
+        y: 662
+        width: 111
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,10 +510,10 @@ TextureImporter:
       name: walkleftSheet_29
       rect:
         serializedVersion: 2
-        x: 504
+        x: 0
         y: 0
-        width: 114
-        height: 655
+        width: 102
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,10 +523,10 @@ TextureImporter:
       name: walkleftSheet_30
       rect:
         serializedVersion: 2
-        x: 992
+        x: 298
         y: 0
-        width: 137
-        height: 655
+        width: 124
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,10 +536,10 @@ TextureImporter:
       name: walkleftSheet_31
       rect:
         serializedVersion: 2
-        x: 1495
+        x: 609
         y: 0
-        width: 130
-        height: 655
+        width: 138
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +549,10 @@ TextureImporter:
       name: walkleftSheet_32
       rect:
         serializedVersion: 2
-        x: 1984
+        x: 920
         y: 0
-        width: 152
-        height: 655
+        width: 151
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: walkleftSheet_33
       rect:
         serializedVersion: 2
-        x: 2503
+        x: 1231
         y: 0
-        width: 114
-        height: 655
+        width: 164
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: walkleftSheet_34
       rect:
         serializedVersion: 2
-        x: 2983
+        x: 1538
         y: 0
-        width: 160
-        height: 655
+        width: 182
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +588,10 @@ TextureImporter:
       name: walkleftSheet_35
       rect:
         serializedVersion: 2
-        x: 3487
+        x: 1849
         y: 0
-        width: 145
-        height: 655
+        width: 195
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,10 +601,10 @@ TextureImporter:
       name: walkleftSheet_36
       rect:
         serializedVersion: 2
-        x: 3975
+        x: 2160
         y: 0
-        width: 176
-        height: 655
+        width: 209
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,10 +614,10 @@ TextureImporter:
       name: walkleftSheet_37
       rect:
         serializedVersion: 2
-        x: 4486
+        x: 2471
         y: 0
-        width: 153
-        height: 655
+        width: 218
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -627,10 +627,10 @@ TextureImporter:
       name: walkleftSheet_38
       rect:
         serializedVersion: 2
-        x: 4975
+        x: 2782
         y: 0
-        width: 183
-        height: 655
+        width: 231
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
       name: walkleftSheet_39
       rect:
         serializedVersion: 2
-        x: 5432
+        x: 3088
         y: 0
-        width: 260
-        height: 655
+        width: 240
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,10 +653,10 @@ TextureImporter:
       name: walkleftSheet_40
       rect:
         serializedVersion: 2
-        x: 5982
+        x: 3400
         y: 0
-        width: 168
-        height: 655
+        width: 244
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,10 +666,10 @@ TextureImporter:
       name: walkleftSheet_41
       rect:
         serializedVersion: 2
-        x: 6470
+        x: 3711
         y: 0
-        width: 191
-        height: 655
+        width: 248
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -679,10 +679,10 @@ TextureImporter:
       name: walkleftSheet_42
       rect:
         serializedVersion: 2
-        x: 6974
+        x: 4022
         y: 0
-        width: 183
-        height: 655
+        width: 253
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -692,10 +692,10 @@ TextureImporter:
       name: walkleftSheet_43
       rect:
         serializedVersion: 2
-        x: 7439
+        x: 4328
         y: 0
-        width: 252
-        height: 655
+        width: 258
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -705,10 +705,10 @@ TextureImporter:
       name: walkleftSheet_44
       rect:
         serializedVersion: 2
-        x: 7973
+        x: 4639
         y: 0
-        width: 191
-        height: 655
+        width: 263
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -718,10 +718,10 @@ TextureImporter:
       name: walkleftSheet_45
       rect:
         serializedVersion: 2
-        x: 8462
+        x: 4950
         y: 0
-        width: 206
-        height: 655
+        width: 267
+        height: 644
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -731,10 +731,10 @@ TextureImporter:
       name: walkleftSheet_46
       rect:
         serializedVersion: 2
-        x: 8957
+        x: 5262
         y: 0
-        width: 214
-        height: 655
+        width: 253
+        height: 644
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -744,10 +744,10 @@ TextureImporter:
       name: walkleftSheet_47
       rect:
         serializedVersion: 2
-        x: 9453
+        x: 5568
         y: 0
-        width: 229
-        height: 655
+        width: 249
+        height: 644
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,10 +757,10 @@ TextureImporter:
       name: walkleftSheet_48
       rect:
         serializedVersion: 2
-        x: 9965
+        x: 5879
         y: 0
-        width: 206
-        height: 655
+        width: 236
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,10 +770,10 @@ TextureImporter:
       name: walkleftSheet_49
       rect:
         serializedVersion: 2
-        x: 10430
+        x: 6190
         y: 0
-        width: 267
-        height: 655
+        width: 222
+        height: 649
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,10 +783,10 @@ TextureImporter:
       name: walkleftSheet_50
       rect:
         serializedVersion: 2
-        x: 10964
+        x: 6501
         y: 0
-        width: 214
-        height: 655
+        width: 209
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,10 +796,10 @@ TextureImporter:
       name: walkleftSheet_51
       rect:
         serializedVersion: 2
-        x: 11452
+        x: 6808
         y: 0
-        width: 237
-        height: 655
+        width: 204
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -809,10 +809,10 @@ TextureImporter:
       name: walkleftSheet_52
       rect:
         serializedVersion: 2
-        x: 11956
+        x: 7119
         y: 0
-        width: 221
-        height: 647
+        width: 191
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,10 +822,10 @@ TextureImporter:
       name: walkleftSheet_53
       rect:
         serializedVersion: 2
-        x: 12444
+        x: 7430
         y: 0
-        width: 252
-        height: 647
+        width: 178
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,10 +835,10 @@ TextureImporter:
       name: walkleftSheet_54
       rect:
         serializedVersion: 2
-        x: 12948
+        x: 7741
         y: 0
-        width: 236
-        height: 647
+        width: 169
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: walkleftSheet_55
       rect:
         serializedVersion: 2
-        x: 13444
+        x: 8048
         y: 0
-        width: 259
-        height: 647
+        width: 160
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -861,10 +861,10 @@ TextureImporter:
       name: walkleftSheet_56
       rect:
         serializedVersion: 2
-        x: 13947
+        x: 8359
         y: 0
-        width: 245
-        height: 647
+        width: 147
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,10 +874,10 @@ TextureImporter:
       name: walkleftSheet_57
       rect:
         serializedVersion: 2
-        x: 14436
+        x: 8670
         y: 0
-        width: 267
-        height: 647
+        width: 133
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -887,23 +887,10 @@ TextureImporter:
       name: walkleftSheet_58
       rect:
         serializedVersion: 2
-        x: 14939
+        x: 8981
         y: 0
-        width: 260
-        height: 647
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkleftSheet_59
-      rect:
-        serializedVersion: 2
-        x: 15512
-        y: 0
-        width: 114
-        height: 655
+        width: 120
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -9,6 +9,6 @@ public class DialougeTrigger : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         sys = GameObject.Find("Dialouge System").GetComponent<DialougeSystem>();
-        sys.StartCoroutine("PrintDialouge", 1);
+        sys.StartCoroutine("PrintDialouge", 0);
 	}
 }

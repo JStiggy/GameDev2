@@ -34,12 +34,12 @@ public class PlayerController : MonoBehaviour
     {
         //Walking
         moveDirection = Input.GetAxisRaw("Horizontal");
-        if(moveDirection != 0)
+        if (moveDirection != 0)
         {
             facingDirection = (int)moveDirection;
         }
-        Grounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1<<8));
-    
+        Grounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1 << 8));
+
         EndGlide = Input.GetKeyUp(KeyCode.U);
         Glide = Input.GetKey(KeyCode.U);
 
@@ -47,16 +47,25 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("gliding", Glide);
         anim.SetFloat("xVel", moveDirection);
 
-        if(Input.GetKey(KeyCode.I) && magObj == null)
+        if (Input.GetKeyDown(KeyCode.I) && magObj == null)
         {
-            
+            Collider2D col = Physics2D.OverlapCircle(transform.position + transform.right * facingDirection * .5f, .4f, 1 << 12);
+            if (col != null)
+            {
+                magObj = col.gameObject.GetComponent<Magnetizable>();
+                magObj.magnetized = true;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.I) && magObj != null)
+        {
+            magObj.magnetized = false;
+            magObj = null;
         }
     }
 
     void FixedUpdate()
     {
         rb.velocity = new Vector3(1 * WalkSpeed * moveDirection, rb.velocity.y, 0);
-        print(transform.right * WalkSpeed * moveDirection);
         if (Glide)
         {
             EndGlide = false;

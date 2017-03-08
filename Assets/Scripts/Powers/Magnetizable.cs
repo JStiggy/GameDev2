@@ -31,7 +31,7 @@ public class Magnetizable : MonoBehaviour {
             }
             if(movementPosition != this.transform.position)
             {
-                rb.AddForce(((movementPosition - transform.position).normalized)/distance * Time.deltaTime * force,ForceMode2D.Impulse);
+                rb.AddForce(((movementPosition - transform.position).normalized)/distance * Time.deltaTime * force, ForceMode2D.Impulse);
             }
         }
 	}

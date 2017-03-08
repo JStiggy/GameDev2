@@ -3,8 +3,6 @@
     
     //Copy from here to the /dialouge tag in order to add more dialouge to the game
  		<Dialouge>
-      //Each
-      <text>
         //First box to display, Note: an enter is added so that it displays in with a newline
         // Text trigger: Upon entering Inspection Chamber (White walled room with a blue window)
         // Text source: The researcher standing looking out the window

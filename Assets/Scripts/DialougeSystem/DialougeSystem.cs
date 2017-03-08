@@ -23,7 +23,7 @@ public class DialougeSystem : MonoBehaviour {
 
     IEnumerator PrintDialouge(int dialougeIndex)
     {
-        Dialouge dialouge = dialougeData.Dialouges[0];
+        Dialouge dialouge = dialougeData.Dialouges[dialougeIndex];
         for (int i = 0; i < dialouge.text.Length; i++)
         {
             for(int j = 0; j < dialouge.text[i].Length; ++j)
