@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -54,6 +55,11 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", Grounded);
         anim.SetBool("gliding", Glide);
         anim.SetFloat("xVel", moveDirection);
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GameManager.Manager.FadeOut(SceneManager.GetActiveScene().name);
+        }
 
         if (Input.GetKeyDown(KeyCode.E) )
         {
