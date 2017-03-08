@@ -13,7 +13,6 @@ public class Activatable : MonoBehaviour {
         {
             foreach (Interactable i in interactableObjects)
             {
-                print(collider.name);
                 i.StopAllCoroutines();
                 i.StartCoroutine("Interact");
             }

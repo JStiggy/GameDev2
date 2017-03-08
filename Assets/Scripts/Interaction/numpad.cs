@@ -12,6 +12,7 @@ public class numpad : MonoBehaviour {
     public string current = "";
     public string num="1234";//type in the password you want it to have
 
+    public Interactable interactableObject;
 
     // Update is called once per frame
     void Update()
@@ -19,9 +20,8 @@ public class numpad : MonoBehaviour {
         print(current);
         if (current == num)
         {
-            dosomething();//do st
+            interactableObject.StartCoroutine("Interact");
             current = "";
-            print("fff");
             return;
         }
         if (Input.GetKeyDown("e"))//for now this is when i press "e" since i just attacth this script to an empty game object
