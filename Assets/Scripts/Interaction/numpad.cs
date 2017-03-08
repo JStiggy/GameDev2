@@ -24,23 +24,7 @@ public class numpad : MonoBehaviour {
             current = "";
             return;
         }
-        if (Input.GetKeyDown("e"))//for now this is when i press "e" since i just attacth this script to an empty game object
-        {
-            for (int i = 0; i < yourButton.Length; i++)
-            {
-                Button btn = yourButton[i].GetComponent<Button>();
-                Image img = yourButton[i].GetComponent<Image>();
-                Text text = yourButton[i].GetComponentInChildren<Text>();
-                current = "";
-                
-                //this whole part make the button visible or invisible
-                yourButton[i].enabled = !(yourButton[i].enabled);
-                img.enabled = !(img.enabled);
-                text.enabled = !(text.enabled);
-
-
-            }
-        }
+        
 
             
     }
@@ -50,48 +34,53 @@ public class numpad : MonoBehaviour {
         //your code here
     }
     //uncomment if there is a trigger
-    //void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if(collision.transform.tag != "Player") return;
-    //    current = "";
-    //    if (Input.GetKeyDown("e")) {
-    //        for (int i = 0; i < yourButton.Length; i++)
-    //        {
-    //            Button btn = yourButton[i].GetComponent<Button>();
-    //            Image img = yourButton[i].GetComponent<Image>();
-    //            Text text = yourButton[i].GetComponentInChildren<Text>();
-    //            current = "";
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.transform.tag != "Player") return;
+
+        if (Input.GetKeyDown("e"))
+        {
+            for (int i = 0; i < yourButton.Length; i++)
+            {
+                Button btn = yourButton[i].GetComponent<Button>();
+                Image img = yourButton[i].GetComponent<Image>();
+                Text text = yourButton[i].GetComponentInChildren<Text>();
+                
 
 
-    //            yourButton[i].enabled = !(yourButton[i].enabled);
-    //            img.enabled = !(img.enabled);
-    //            text.enabled = !(text.enabled);
+                yourButton[i].enabled = !(yourButton[i].enabled);
+                img.enabled = !(img.enabled);
+                text.enabled = !(text.enabled);
 
 
-    //        }
-    //    }
+            }
+        }
 
-    //}
-    //void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if(collision.transform.tag != "Player") return;
-    //    current = "";
-    //    for (int i = 0; i < yourButton.Length; i++)
-    //    {
-    //        Button btn = yourButton[i].GetComponent<Button>();
-    //        Image img = yourButton[i].GetComponent<Image>();
-    //        Text text = yourButton[i].GetComponentInChildren<Text>();
-    //        current = "";
-
-
-    //        yourButton[i].enabled = !(yourButton[i].enabled);
-    //        img.enabled = !(img.enabled);
-    //        text.enabled = !(text.enabled);
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.transform.tag != "Player") return;
+        current = "";
+        for (int i = 0; i < yourButton.Length; i++)
+        {
+            Button btn = yourButton[i].GetComponent<Button>();
+            Image img = yourButton[i].GetComponent<Image>();
+            Text text = yourButton[i].GetComponentInChildren<Text>();
 
 
-    //    }
 
-    //}
+            yourButton[i].enabled = !(yourButton[i].enabled);
+            img.enabled = !(img.enabled);
+            text.enabled = !(text.enabled);
+
+
+        }
+
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        current = "";
+    }
     void Start()
     {
         current = "";
@@ -106,7 +95,7 @@ public class numpad : MonoBehaviour {
                 Button btn = yourButton[i].GetComponent<Button>();
                 Image img = yourButton[i].GetComponent<Image>();
                 Text text = yourButton[i].GetComponentInChildren<Text>();
-                current = "";
+                
                 
 
                 yourButton[i].enabled = !(yourButton[i].enabled);
