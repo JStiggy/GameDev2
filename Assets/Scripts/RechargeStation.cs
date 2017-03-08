@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RechargeStation : MonoBehaviour {
+public class RechargeStation : Interactable {
 
     Animator anim = null;
     bool playerFade = true;
     GameObject player = null;
 
-    void OnEnable()
+    public override IEnumerator Interact()
     {
         if(player == null)
             player = GameObject.FindGameObjectWithTag("Player");
@@ -23,6 +23,7 @@ public class RechargeStation : MonoBehaviour {
         GameManager.Manager.playerData.Save();
 
         anim.SetBool("Charging", true);
+        yield return null;
     }
 
     void FadePlayer()

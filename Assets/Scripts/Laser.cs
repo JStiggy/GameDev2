@@ -15,7 +15,11 @@ public class Laser : MonoBehaviour {
     {
        RaycastHit2D value = Physics2D.Raycast(this.transform.position, Vector2.right, 100f);
        lr.SetPosition(1, Vector3.right * value.distance);
-       print(Vector3.right * value.distance);
+        if(value.transform.tag == "Player")
+        { 
+            value.transform.GetComponent<BoxCollider2D>().enabled = false;
+            GameManager.Manager.ReloadGame();
+        }
     }
 
 

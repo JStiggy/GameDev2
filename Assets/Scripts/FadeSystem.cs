@@ -22,11 +22,14 @@ public class FadeSystem : MonoBehaviour
             yield return null;
         }
 
-        fading = false;
-
         if (alpha >= 1 && fadeDir == 1 && values[1] != null)
         {
             SceneManager.LoadScene((string)values[1]);
+            this.StopAllCoroutines();
+        }
+        else
+        {
+            fading = false;
         }
         yield return null;
     }

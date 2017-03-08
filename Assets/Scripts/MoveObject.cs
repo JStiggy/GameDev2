@@ -2,28 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObject : MonoBehaviour {
+public class MoveObject : Interactable {
 
-    public float interp = .1f;
+    public float interp = .0005f;
+    public bool constantMotion = true;
+    public bool startMoving = false;
 
-    Vector3 locationA;
-    Vector3 locationB;
+    public Vector3 locationA;
+    public Vector3 locationB;
     bool aStart = true;
 
-    public IEnumerator MoveLocation()
+    void Awake()
     {
-        locationA = transform.GetChild(0).position;
-        locationB = transform.GetChild(1).position;
+        if(startMoving)
+        {
+            StartCoroutine("Interact");
+        }
+    }
 
+    public override IEnumerator Interact()
+    {
         Vector3 dest = aStart ? locationB : locationA;
-
+        Vector3 start = aStart ? locationA : locationB;
         while (Vector3.Distance(transform.position, dest) > .5)
         {
-            transform.position = Vector3.Lerp(transform.position, dest, interp);
+            transform.position -= start - Vector3.Lerp(start, dest, interp);
             yield return null;
         }
 
         aStart = !aStart;
+        if(constantMotion)
+        {
+            StartCoroutine("Interact");
+        }
         yield return null;
     }
 }

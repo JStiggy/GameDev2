@@ -62,8 +62,10 @@ public class GameManager : MonoBehaviour
 
     public void ReloadGame()
     {
-        playerData = playerData.Load();
-        SceneManager.LoadScene(playerData.saveScene);
+        //playerData = playerData.Load();
+        //For alpha
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //FadeOut(playerData.saveScene);
     }
 
     public void DecreaseEnergy(float energyConsumption)

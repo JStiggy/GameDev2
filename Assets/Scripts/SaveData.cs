@@ -13,7 +13,7 @@ public class SaveData : ISerializable
     public int version = 1;
     public float energyReserve = 100f;
 
-    public string saveScene = "Test";
+    public string saveScene = "LabTestRoom";
     public float saveXPosition = 1f;
     public float saveYPosition = 1f;
 

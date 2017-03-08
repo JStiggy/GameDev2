@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elevator : MonoBehaviour {
+public class Elevator : Interactable {
 
     Animator anim = null;
     bool playerFade = true;
@@ -11,7 +11,7 @@ public class Elevator : MonoBehaviour {
     public float nextXPos = 0;
     public float nextYPos = 0;
 
-    void OnEnable()
+    public override IEnumerator Interact()
     {
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player");
@@ -19,6 +19,7 @@ public class Elevator : MonoBehaviour {
             anim = this.GetComponent<Animator>();
 
         anim.SetTrigger("Activated");
+        yield return null;
     }
 
     void FadePlayer()
