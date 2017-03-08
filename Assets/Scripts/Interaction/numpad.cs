@@ -52,6 +52,7 @@ public class numpad : MonoBehaviour {
     //uncomment if there is a trigger
     //void OnTriggerEnter2D(Collider2D collision)
     //{
+    //    if(collision.transform.tag != "Player") return;
     //    current = "";
     //    if (Input.GetKeyDown("e")) {
     //        for (int i = 0; i < yourButton.Length; i++)
@@ -69,10 +70,11 @@ public class numpad : MonoBehaviour {
 
     //        }
     //    }
-        
+
     //}
     //void OnTriggerExit2D(Collider2D collision)
     //{
+    //    if(collision.transform.tag != "Player") return;
     //    current = "";
     //    for (int i = 0; i < yourButton.Length; i++)
     //    {
