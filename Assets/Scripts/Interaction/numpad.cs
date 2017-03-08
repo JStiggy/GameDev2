@@ -49,6 +49,47 @@ public class numpad : MonoBehaviour {
     {
         //your code here
     }
+    //uncomment if there is a trigger
+    //void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    current = "";
+    //    if (Input.GetKeyDown("e")) {
+    //        for (int i = 0; i < yourButton.Length; i++)
+    //        {
+    //            Button btn = yourButton[i].GetComponent<Button>();
+    //            Image img = yourButton[i].GetComponent<Image>();
+    //            Text text = yourButton[i].GetComponentInChildren<Text>();
+    //            current = "";
+
+
+    //            yourButton[i].enabled = !(yourButton[i].enabled);
+    //            img.enabled = !(img.enabled);
+    //            text.enabled = !(text.enabled);
+
+
+    //        }
+    //    }
+        
+    //}
+    //void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    current = "";
+    //    for (int i = 0; i < yourButton.Length; i++)
+    //    {
+    //        Button btn = yourButton[i].GetComponent<Button>();
+    //        Image img = yourButton[i].GetComponent<Image>();
+    //        Text text = yourButton[i].GetComponentInChildren<Text>();
+    //        current = "";
+
+
+    //        yourButton[i].enabled = !(yourButton[i].enabled);
+    //        img.enabled = !(img.enabled);
+    //        text.enabled = !(text.enabled);
+
+
+    //    }
+
+    //}
     void Start()
     {
         current = "";
