@@ -58,12 +58,4 @@ public class PlayerController : MonoBehaviour
                 GetComponent<Rigidbody2D>().gravityScale * 0.9f * Physics2D.gravity.y);
         }
     }
-
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Ground")
-        {
-            Grounded = true;
-        }
-    }
 }
