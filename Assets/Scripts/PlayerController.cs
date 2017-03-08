@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float JumpBoost;
     public float RunSpeed;
     public float EnhancedBoostDuration;
-
+    int facingDirection = 1;
     public float moveDirection;
 
     private Animator anim;
@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private bool Glide = false;
     private bool EndGlide = false;
 
+    Magnetizable magObj = null;
+
     void Awake()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -32,7 +34,11 @@ public class PlayerController : MonoBehaviour
     {
         //Walking
         moveDirection = Input.GetAxisRaw("Horizontal");
-        Grounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, (1<<11));
+        if(moveDirection != 0)
+        {
+            facingDirection = (int)moveDirection;
+        }
+        Grounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1<<8));
     
         EndGlide = Input.GetKeyUp(KeyCode.U);
         Glide = Input.GetKey(KeyCode.U);
@@ -40,6 +46,11 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", Grounded);
         anim.SetBool("gliding", Glide);
         anim.SetFloat("xVel", moveDirection);
+
+        if(Input.GetKey(KeyCode.I) && magObj == null)
+        {
+            
+        }
     }
 
     void FixedUpdate()
@@ -64,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(transform.position - new Vector3(0, .8f, 0), .4f);
+        Gizmos.DrawSphere(transform.position + transform.right * facingDirection*.5f, .4f);
+
     }
 }
