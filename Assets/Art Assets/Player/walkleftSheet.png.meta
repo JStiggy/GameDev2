@@ -1,0 +1,916 @@
+fileFormatVersion: 2
+guid: c6ea5570cbb95a044b8242cb6af15dd8
+timeCreated: 1488933929
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walkleftSheet_0
+    21300002: walkleftSheet_1
+    21300004: walkleftSheet_2
+    21300006: walkleftSheet_3
+    21300008: walkleftSheet_4
+    21300010: walkleftSheet_5
+    21300012: walkleftSheet_6
+    21300014: walkleftSheet_7
+    21300016: walkleftSheet_8
+    21300018: walkleftSheet_9
+    21300020: walkleftSheet_10
+    21300022: walkleftSheet_11
+    21300024: walkleftSheet_12
+    21300026: walkleftSheet_13
+    21300028: walkleftSheet_14
+    21300030: walkleftSheet_15
+    21300032: walkleftSheet_16
+    21300034: walkleftSheet_17
+    21300036: walkleftSheet_18
+    21300038: walkleftSheet_19
+    21300040: walkleftSheet_20
+    21300042: walkleftSheet_21
+    21300044: walkleftSheet_22
+    21300046: walkleftSheet_23
+    21300048: walkleftSheet_24
+    21300050: walkleftSheet_25
+    21300052: walkleftSheet_26
+    21300054: walkleftSheet_27
+    21300056: walkleftSheet_28
+    21300058: walkleftSheet_29
+    21300060: walkleftSheet_30
+    21300062: walkleftSheet_31
+    21300064: walkleftSheet_32
+    21300066: walkleftSheet_33
+    21300068: walkleftSheet_34
+    21300070: walkleftSheet_35
+    21300072: walkleftSheet_36
+    21300074: walkleftSheet_37
+    21300076: walkleftSheet_38
+    21300078: walkleftSheet_39
+    21300080: walkleftSheet_40
+    21300082: walkleftSheet_41
+    21300084: walkleftSheet_42
+    21300086: walkleftSheet_43
+    21300088: walkleftSheet_44
+    21300090: walkleftSheet_45
+    21300092: walkleftSheet_46
+    21300094: walkleftSheet_47
+    21300096: walkleftSheet_48
+    21300098: walkleftSheet_49
+    21300100: walkleftSheet_50
+    21300102: walkleftSheet_51
+    21300104: walkleftSheet_52
+    21300106: walkleftSheet_53
+    21300108: walkleftSheet_54
+    21300110: walkleftSheet_55
+    21300112: walkleftSheet_56
+    21300114: walkleftSheet_57
+    21300116: walkleftSheet_58
+    21300118: walkleftSheet_59
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walkleftSheet_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 723
+        width: 236
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_1
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 723
+        width: 229
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 723
+        width: 206
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 723
+        width: 244
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 723
+        width: 190
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 723
+        width: 175
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 723
+        width: 153
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_7
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 723
+        width: 252
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_8
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 723
+        width: 145
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 723
+        width: 237
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_10
+      rect:
+        serializedVersion: 2
+        x: 5104
+        y: 723
+        width: 252
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_11
+      rect:
+        serializedVersion: 2
+        x: 5616
+        y: 723
+        width: 228
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_12
+      rect:
+        serializedVersion: 2
+        x: 6127
+        y: 723
+        width: 206
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_13
+      rect:
+        serializedVersion: 2
+        x: 6607
+        y: 723
+        width: 245
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_14
+      rect:
+        serializedVersion: 2
+        x: 7164
+        y: 723
+        width: 130
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_15
+      rect:
+        serializedVersion: 2
+        x: 7637
+        y: 723
+        width: 191
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_16
+      rect:
+        serializedVersion: 2
+        x: 8111
+        y: 723
+        width: 244
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_17
+      rect:
+        serializedVersion: 2
+        x: 8645
+        y: 723
+        width: 183
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_18
+      rect:
+        serializedVersion: 2
+        x: 9110
+        y: 723
+        width: 252
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_19
+      rect:
+        serializedVersion: 2
+        x: 9652
+        y: 723
+        width: 168
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_20
+      rect:
+        serializedVersion: 2
+        x: 10110
+        y: 723
+        width: 251
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_21
+      rect:
+        serializedVersion: 2
+        x: 10659
+        y: 723
+        width: 153
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_22
+      rect:
+        serializedVersion: 2
+        x: 11170
+        y: 723
+        width: 122
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_23
+      rect:
+        serializedVersion: 2
+        x: 11674
+        y: 723
+        width: 129
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_24
+      rect:
+        serializedVersion: 2
+        x: 12162
+        y: 723
+        width: 145
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_25
+      rect:
+        serializedVersion: 2
+        x: 12666
+        y: 723
+        width: 137
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_26
+      rect:
+        serializedVersion: 2
+        x: 13108
+        y: 723
+        width: 252
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_27
+      rect:
+        serializedVersion: 2
+        x: 13604
+        y: 723
+        width: 259
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 122
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_29
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 114
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_30
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 137
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 0
+        width: 130
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 0
+        width: 152
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_33
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 0
+        width: 114
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 0
+        width: 160
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3487
+        y: 0
+        width: 145
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_36
+      rect:
+        serializedVersion: 2
+        x: 3975
+        y: 0
+        width: 176
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_37
+      rect:
+        serializedVersion: 2
+        x: 4486
+        y: 0
+        width: 153
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_38
+      rect:
+        serializedVersion: 2
+        x: 4975
+        y: 0
+        width: 183
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_39
+      rect:
+        serializedVersion: 2
+        x: 5432
+        y: 0
+        width: 260
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_40
+      rect:
+        serializedVersion: 2
+        x: 5982
+        y: 0
+        width: 168
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_41
+      rect:
+        serializedVersion: 2
+        x: 6470
+        y: 0
+        width: 191
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_42
+      rect:
+        serializedVersion: 2
+        x: 6974
+        y: 0
+        width: 183
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_43
+      rect:
+        serializedVersion: 2
+        x: 7439
+        y: 0
+        width: 252
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_44
+      rect:
+        serializedVersion: 2
+        x: 7973
+        y: 0
+        width: 191
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_45
+      rect:
+        serializedVersion: 2
+        x: 8462
+        y: 0
+        width: 206
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_46
+      rect:
+        serializedVersion: 2
+        x: 8957
+        y: 0
+        width: 214
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_47
+      rect:
+        serializedVersion: 2
+        x: 9453
+        y: 0
+        width: 229
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_48
+      rect:
+        serializedVersion: 2
+        x: 9965
+        y: 0
+        width: 206
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_49
+      rect:
+        serializedVersion: 2
+        x: 10430
+        y: 0
+        width: 267
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_50
+      rect:
+        serializedVersion: 2
+        x: 10964
+        y: 0
+        width: 214
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_51
+      rect:
+        serializedVersion: 2
+        x: 11452
+        y: 0
+        width: 237
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_52
+      rect:
+        serializedVersion: 2
+        x: 11956
+        y: 0
+        width: 221
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_53
+      rect:
+        serializedVersion: 2
+        x: 12444
+        y: 0
+        width: 252
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_54
+      rect:
+        serializedVersion: 2
+        x: 12948
+        y: 0
+        width: 236
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_55
+      rect:
+        serializedVersion: 2
+        x: 13444
+        y: 0
+        width: 259
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_56
+      rect:
+        serializedVersion: 2
+        x: 13947
+        y: 0
+        width: 245
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_57
+      rect:
+        serializedVersion: 2
+        x: 14436
+        y: 0
+        width: 267
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_58
+      rect:
+        serializedVersion: 2
+        x: 14939
+        y: 0
+        width: 260
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walkleftSheet_59
+      rect:
+        serializedVersion: 2
+        x: 15512
+        y: 0
+        width: 114
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
