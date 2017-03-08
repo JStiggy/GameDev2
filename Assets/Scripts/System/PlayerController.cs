@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     int facingDirection = 1;
     public float moveDirection;
 
+    public bool control = true;
+    public bool activate = false;
+
     private Animator anim;
     private Rigidbody2D rb;
 
@@ -32,6 +35,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        activate = false;
+        if (!control)
+        {
+            return;
+        }
         //Walking
         moveDirection = Input.GetAxisRaw("Horizontal");
         if (moveDirection != 0)
@@ -46,6 +54,12 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", Grounded);
         anim.SetBool("gliding", Glide);
         anim.SetFloat("xVel", moveDirection);
+
+        if (Input.GetKeyDown(KeyCode.E) )
+        {
+            print("Pressed");
+            activate = true;
+        }
 
         if (Input.GetKeyDown(KeyCode.I) && magObj == null)
         {
@@ -65,6 +79,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!control)
+        {
+            return;
+        }
         rb.velocity = new Vector3(1 * WalkSpeed * moveDirection, rb.velocity.y, 0);
         if (Glide)
         {
@@ -80,11 +98,5 @@ public class PlayerController : MonoBehaviour
             Glide = false;
             rb.AddForce(transform.up * rb.gravityScale * 0.9f * Physics2D.gravity.y);
         }
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(transform.position + transform.right * facingDirection*.5f, .4f);
-
     }
 }

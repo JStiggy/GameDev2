@@ -8,7 +8,7 @@ public class Activatable : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if (Input.GetKeyDown("e") && collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player" && collider.gameObject.GetComponent<PlayerController>().activate)
         {
             foreach (Interactable i in interactableObjects)
             {

@@ -17,7 +17,7 @@ public class Elevator : Interactable {
             player = GameObject.FindGameObjectWithTag("Player");
         if (anim == null)
             anim = this.GetComponent<Animator>();
-
+        player.GetComponent<PlayerController>().control = false;
         anim.SetTrigger("Activated");
         yield return null;
     }
@@ -27,7 +27,9 @@ public class Elevator : Interactable {
         GameManager.Manager.SpriteFade(!playerFade, player);
         playerFade = !playerFade;
         if (playerFade == true)
+        {
             this.enabled = false;
+        }
     }
 
     void ChangeScene()

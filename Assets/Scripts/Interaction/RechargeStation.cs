@@ -21,7 +21,7 @@ public class RechargeStation : Interactable {
         GameManager.Manager.playerData.saveXPosition = player.transform.position.x;
         GameManager.Manager.playerData.saveYPosition = player.transform.position.y;
         GameManager.Manager.playerData.Save();
-
+        player.GetComponent<PlayerController>().control = false;
         anim.SetBool("Charging", true);
         yield return null;
     }
@@ -32,6 +32,8 @@ public class RechargeStation : Interactable {
         anim.SetBool("Charging", playerFade);
         playerFade = !playerFade;
         if (playerFade == true)
-            this.enabled = false;
+        {
+            player.GetComponent<PlayerController>().control = true;
+        }
     }
 }
