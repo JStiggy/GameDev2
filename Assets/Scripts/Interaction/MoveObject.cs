@@ -24,12 +24,11 @@ public class MoveObject : Interactable {
     {
         Vector3 dest = aStart ? locationB : locationA;
         Vector3 start = aStart ? locationA : locationB;
-        while (Vector3.Distance(transform.position, dest) > .5)
+        while (Vector2.Distance(transform.position, dest) > .015)
         {
             transform.position -= start - Vector3.Lerp(start, dest, interp);
             yield return null;
         }
-
         aStart = !aStart;
         if(constantMotion)
         {

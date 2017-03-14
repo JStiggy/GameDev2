@@ -13,7 +13,6 @@ public class Elevator : Interactable {
 
     public override IEnumerator Interact()
     {
-        print("Elev");
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player");
         if (anim == null)

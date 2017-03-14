@@ -16,13 +16,13 @@ public class RechargeStation : Interactable {
             player = GameObject.FindGameObjectWithTag("Player");
         if (anim == null)
             anim = this.GetComponent<Animator>();
-        
-        //GameManager.Manager.playerData.energyReserve = 100f;
-        //GameManager.Manager.playerData.saveScene = SceneManager.GetActiveScene().name;
-        //GameManager.Manager.playerData.saveXPosition = player.transform.position.x;
-        //GameManager.Manager.playerData.saveYPosition = player.transform.position.y;
-        //GameManager.Manager.playerData.Save();
-        //player.GetComponent<PlayerController>().control = false;
+
+        GameManager.Manager.playerData.energyReserve = 100f;
+        GameManager.Manager.playerData.saveScene = SceneManager.GetActiveScene().name;
+        GameManager.Manager.playerData.saveXPosition = player.transform.position.x;
+        GameManager.Manager.playerData.saveYPosition = player.transform.position.y;
+        GameManager.Manager.playerData.Save();
+        player.GetComponent<PlayerController>().control = false;
         anim.SetBool("Charging", true);
         yield return null;
     }
@@ -34,7 +34,6 @@ public class RechargeStation : Interactable {
         playerFade = !playerFade;
         if (playerFade == true)
         {
-            GameManager.Manager.FadeOut("MainFrameRoom");
             player.GetComponent<PlayerController>().control = true;
         }
     }

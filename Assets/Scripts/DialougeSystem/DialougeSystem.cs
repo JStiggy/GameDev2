@@ -33,6 +33,11 @@ public class DialougeSystem : MonoBehaviour {
             for(int j = 0; j < dialouge.text[i].Length; ++j)
             {
                 displayText.text += dialouge.text[i][j];
+                if(Input.GetKeyDown(KeyCode.Space))
+                {
+                    displayText.text = dialouge.text[i];
+                    break;
+                }
                 yield return new WaitForSeconds(waitTime);
             }
             if(dialouge.autoScroll != -1)
@@ -51,5 +56,4 @@ public class DialougeSystem : MonoBehaviour {
         }
         img.enabled = false;
     }
-
 }
