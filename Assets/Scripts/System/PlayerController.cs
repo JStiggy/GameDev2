@@ -7,8 +7,13 @@ public class PlayerController : MonoBehaviour
 {
     public float WalkSpeed;
     public float JumpBoost;
+    public float EnhancedJumpCo;
     public float RunSpeed;
     public float EnhancedBoostDuration;
+
+    public GameObject shield;
+
+    [HideInInspector]
     int facingDirection = 1;
     public float moveDirection;
 
@@ -19,13 +24,21 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
 
     private bool Grounded = false;
-    private bool BasicJump = true;  //Avoid input loss
+
+    /*Basic Jump*/
+    private bool BasicJump = false;
     private bool EnhancedBoost = false;
     private float Duration = 0f;
+
+    /*Enhanced Jump*/
     private bool EnhancedJump = false;
+
+    /*Glide*/
     private bool Glide = false;
     private bool EndGlide = false;
 
+    /*Shield*/
+    private bool shield_on = false;
     Magnetizable magObj = null;
 
     void Awake()
@@ -41,6 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+
         //Walking
         moveDirection = Input.GetAxisRaw("Horizontal");
         if (moveDirection != 0)
@@ -49,12 +63,26 @@ public class PlayerController : MonoBehaviour
         }
         Grounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1 << 8));
 
-        EndGlide = Input.GetKeyUp(KeyCode.U);
-        Glide = Input.GetKey(KeyCode.U);
+        EndGlide = Input.GetKeyUp(KeyCode.U) || Grounded;
+        Glide = Input.GetKey(KeyCode.U) && !Grounded;
 
         anim.SetBool("grounded", Grounded);
         anim.SetBool("gliding", Glide);
         anim.SetFloat("xVel", moveDirection);
+        
+        if(shield_on)
+        {
+            shield.SetActive(true);
+        }
+        else
+        {
+            shield.SetActive(false);
+        }
+
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            shield_on = !shield_on;
+        }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -63,7 +91,6 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) )
         {
-            print("Pressed");
             activate = true;
         }
 
@@ -81,6 +108,18 @@ public class PlayerController : MonoBehaviour
             magObj.magnetized = false;
             magObj = null;
         }
+
+        if(Input.GetKeyDown(KeyCode.Space) && !BasicJump && !EnhancedJump)
+        {
+            if (Grounded)
+                BasicJump = true;
+        }
+
+        if(Input.GetKeyDown(KeyCode.J) && !EnhancedJump && !BasicJump)
+        {
+            if (Grounded)
+                EnhancedJump = true;
+        }
     }
 
     void FixedUpdate()
@@ -89,7 +128,8 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        rb.velocity = new Vector3(1 * WalkSpeed * moveDirection, rb.velocity.y, 0);
+
+        rb.velocity = new Vector3(WalkSpeed * moveDirection, rb.velocity.y, 0);
         if (Glide)
         {
             EndGlide = false;
@@ -104,5 +144,17 @@ public class PlayerController : MonoBehaviour
             Glide = false;
             rb.AddForce(transform.up * rb.gravityScale * 0.9f * Physics2D.gravity.y);
         }
+
+        if(BasicJump)
+        {
+            rb.AddForce(new Vector2(0f, JumpBoost));
+            BasicJump = false;
+        }
+        if(EnhancedJump)
+        {
+            rb.AddForce(new Vector2(0f, EnhancedJumpCo * JumpBoost));
+            EnhancedJump = false;
+        }
     }
+    
 }
