@@ -8,7 +8,7 @@ public class CreateShadows : MonoBehaviour
     public GameObject lightmeshholder;
 
     private int RaysToShoot = 10240;
-    private int distance = 60;
+    public int distance = 60;
     private Vector3[] vertices;
     private Vector2[] vertices2d;
     private int[] triangles;
