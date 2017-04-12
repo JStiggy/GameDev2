@@ -107,7 +107,7 @@ public class Player1 : MonoBehaviour {
                     RaycastHit2D[] f = Physics2D.RaycastAll(transform.position, transform.right, 1000f);
                     for (int ix = 0; ix < f.Length; ix++)
                     {
-                        if (f[ix].collider.tag == "player") {
+                        if (f[ix].collider.tag == "Player") {
 
                             Vector3 v = transform.right.normalized;
                             lr.SetPosition(0, forw.transform.position );
