@@ -15,11 +15,6 @@ public class KeyPad : Interactable {
     public Image[] buttonPresses = null;
     public Sprite[] animations = null; 
 
-    void Awake()
-    {
-        StartCoroutine("Interact");
-    }
-
     int mod(int x, int m)
     {
         int r = x % m;

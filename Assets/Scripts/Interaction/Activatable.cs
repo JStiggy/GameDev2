@@ -42,10 +42,9 @@ public class Activatable : MonoBehaviour {
             {
                 i.StopAllCoroutines();
                 i.StartCoroutine("Interact");
+                interactButton.SetActive(false);
             }
         }
     }
-
-
 
 }

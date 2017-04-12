@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
         activate = false;
         if (!control)
         {
+            anim.SetFloat("xVel", 0);
             return;
         }
 
