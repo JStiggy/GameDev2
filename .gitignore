@@ -28,3 +28,8 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets\Data\player.dat
+Assets/Art Assets/Player/walkleftSheet_0.controller
+Assets/Art Assets/Player/walkleftSheet_0.controller.meta
+Assets/Art Assets/Player/walkRightSheet_27.controller
+Assets/Art Assets/Player/walkRightSheet_27.controller.meta
