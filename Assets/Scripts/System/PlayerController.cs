@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float EnhancedJumpCo;
     public float RunSpeed;
     public float EnhancedBoostDuration;
+	public GameManager data;
 
     public GameObject shield;
 
@@ -73,6 +74,7 @@ public class PlayerController : MonoBehaviour
         if(shield_on)
         {
             shield.SetActive(true);
+			data.playerData.energyReserve -= 2f * Time.deltaTime;
         }
         else
         {
@@ -117,8 +119,11 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.J) && !EnhancedJump && !BasicJump)
         {
-            if (Grounded)
-                EnhancedJump = true;
+			if (Grounded) 
+			{
+				EnhancedJump = true;
+				data.playerData.energyReserve -= 3f;
+			}
         }
     }
 
