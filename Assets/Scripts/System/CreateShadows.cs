@@ -19,7 +19,7 @@ public class CreateShadows : MonoBehaviour
     {
         vertices2d = new Vector2[RaysToShoot];
         mesh = lightmeshholder.GetComponent<MeshFilter>().mesh;
-        lightmeshholder.layer = 8;
+        lightmeshholder.layer = 13;
         BuildMesh();
     }
 
@@ -38,7 +38,7 @@ public class CreateShadows : MonoBehaviour
 
             Vector3 dir = new Vector3(x, y, 0);
             RaycastHit2D hit;
-            if ((hit = Physics2D.Raycast(transform.position, dir, distance)))
+            if ((hit = Physics2D.Raycast(transform.position, dir, distance, (1 << 0) | (1<<9) | (1<<11) | (1<<12))))
             {
                 //Debug.DrawLine (transform.position, hit.point, new Color(1,1,0,1));
                 var tmp = lightmeshholder.transform.InverseTransformPoint(hit.point);
@@ -70,7 +70,7 @@ public class CreateShadows : MonoBehaviour
 
             Vector3 dir = new Vector3(x, 0, y);
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, dir, out hit, distance))
+            if (Physics.Raycast(transform.position, dir, out hit, distance, (1 << 0) | (1 << 9) | (1 << 11) | (1 << 12)))
             {
 
                 var tmp = lightmeshholder.transform.InverseTransformPoint(hit.point);
