@@ -104,16 +104,28 @@ public class Player1 : MonoBehaviour {
                     RaycastHit2D[] f = Physics2D.RaycastAll(transform.position, transform.right, 1000f);
                     for (int ix = 0; ix < f.Length; ix++)
                     {
-                        if (f[ix].collider.tag == "Player") {
+                    if (f[ix].collider.name == "shield_test") {
+                        print("got hit by shield");
+                        Vector3 v = transform.right.normalized;
+                        lr.SetPosition(0, forw.transform.position);
 
-                            Vector3 v = transform.right.normalized;
-                            lr.SetPosition(0, forw.transform.position );
-                            
-                            lr.SetPosition(1, f[ix].point);
-                            i = 0;
+                        lr.SetPosition(1, f[ix].point);
+                        i = 0;
                         lr.startWidth = 0.15f;
                         i = 0;
-                        
+                        break;
+                    }
+                    else if (f[ix].collider.tag == "Player")
+                    {
+
+                        Vector3 v = transform.right.normalized;
+                        lr.SetPosition(0, forw.transform.position);
+
+                        lr.SetPosition(1, f[ix].point);
+                        i = 0;
+                        lr.startWidth = 0.15f;
+                        i = 0;
+
                         Destroy(f[ix].collider.gameObject);
                     }
                         
