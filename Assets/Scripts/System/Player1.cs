@@ -53,7 +53,7 @@ public class Player1 : MonoBehaviour {
     }
     
     void Update () {
-        
+        pressed = true;
         if (lr.startWidth > 0)
         {
             lr.startWidth -= 0.03f;
@@ -62,10 +62,7 @@ public class Player1 : MonoBehaviour {
         if (enter && pressed)i++;
         if (i<=60)forw.transform.localScale = new Vector3(i * 0.5f / 60f, i * 0.5f / 60f, i * 0.5f / 60f);
         if (i > 60) forw.transform.localScale = new Vector3(60f * 0.5f / 60f, 60f * 0.5f / 60f, 60f * 0.5f / 60f);
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            pressed = !pressed;
-        }
+        
 
 
 
@@ -79,7 +76,7 @@ public class Player1 : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (new Vector3(Vector3.Angle(new Vector3(1f, 0f, 0f), direction), 0f, 
 			Vector3.Angle(new Vector3(0f, 1f, 0f), direction)));
 */
-        if (AIM == null) { enter = false; return; }
+        if (AIM == null) { enter = false; i = 0; return; }
         Vector3 direction = AIM.transform.position - transform.position;
 		direction.Normalize ();
         Vector3 offset = AIM.transform.position - transform.position;
@@ -107,16 +104,28 @@ public class Player1 : MonoBehaviour {
                     RaycastHit2D[] f = Physics2D.RaycastAll(transform.position, transform.right, 1000f);
                     for (int ix = 0; ix < f.Length; ix++)
                     {
-                        if (f[ix].collider.tag == "Player") {
+                    if (f[ix].collider.name == "shield_test") {
+                        print("got hit by shield");
+                        Vector3 v = transform.right.normalized;
+                        lr.SetPosition(0, forw.transform.position);
 
-                            Vector3 v = transform.right.normalized;
-                            lr.SetPosition(0, forw.transform.position );
-                            
-                            lr.SetPosition(1, f[ix].point);
-                            i = 0;
+                        lr.SetPosition(1, f[ix].point);
+                        i = 0;
                         lr.startWidth = 0.15f;
                         i = 0;
-                        
+                        break;
+                    }
+                    else if (f[ix].collider.tag == "Player")
+                    {
+
+                        Vector3 v = transform.right.normalized;
+                        lr.SetPosition(0, forw.transform.position);
+
+                        lr.SetPosition(1, f[ix].point);
+                        i = 0;
+                        lr.startWidth = 0.15f;
+                        i = 0;
+
                         Destroy(f[ix].collider.gameObject);
                     }
                         
