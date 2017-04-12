@@ -76,7 +76,7 @@ public class Player1 : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (new Vector3(Vector3.Angle(new Vector3(1f, 0f, 0f), direction), 0f, 
 			Vector3.Angle(new Vector3(0f, 1f, 0f), direction)));
 */
-        if (AIM == null) { enter = false; return; }
+        if (AIM == null) { enter = false; i = 0; return; }
         Vector3 direction = AIM.transform.position - transform.position;
 		direction.Normalize ();
         Vector3 offset = AIM.transform.position - transform.position;
