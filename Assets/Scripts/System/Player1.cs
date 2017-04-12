@@ -53,7 +53,7 @@ public class Player1 : MonoBehaviour {
     }
     
     void Update () {
-        
+        pressed = true;
         if (lr.startWidth > 0)
         {
             lr.startWidth -= 0.03f;
@@ -62,10 +62,7 @@ public class Player1 : MonoBehaviour {
         if (enter && pressed)i++;
         if (i<=60)forw.transform.localScale = new Vector3(i * 0.5f / 60f, i * 0.5f / 60f, i * 0.5f / 60f);
         if (i > 60) forw.transform.localScale = new Vector3(60f * 0.5f / 60f, 60f * 0.5f / 60f, 60f * 0.5f / 60f);
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            pressed = !pressed;
-        }
+        
 
 
 
