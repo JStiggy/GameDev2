@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 622817a33ed9f854990baa274cbe5664
-timeCreated: 1488932069
+timeCreated: 1492018452
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -133,10 +133,10 @@ TextureImporter:
       name: walkRightSheet_0
       rect:
         serializedVersion: 2
-        x: 186
-        y: 761
-        width: 141
-        height: 669
+        x: 4
+        y: 0
+        width: 166
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +146,10 @@ TextureImporter:
       name: walkRightSheet_1
       rect:
         serializedVersion: 2
-        x: 673
-        y: 761
-        width: 165
-        height: 669
+        x: 303
+        y: 0
+        width: 200
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: walkRightSheet_2
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 761
-        width: 181
-        height: 669
+        x: 598
+        y: 0
+        width: 233
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: walkRightSheet_3
       rect:
         serializedVersion: 2
-        x: 1650
-        y: 754
-        width: 208
-        height: 676
+        x: 897
+        y: 0
+        width: 237
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: walkRightSheet_4
       rect:
         serializedVersion: 2
-        x: 2132
-        y: 755
-        width: 234
-        height: 675
+        x: 1196
+        y: 0
+        width: 241
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +198,10 @@ TextureImporter:
       name: walkRightSheet_5
       rect:
         serializedVersion: 2
-        x: 2626
-        y: 761
-        width: 252
-        height: 669
+        x: 1491
+        y: 0
+        width: 249
+        height: 647
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +211,10 @@ TextureImporter:
       name: walkRightSheet_6
       rect:
         serializedVersion: 2
-        x: 3123
-        y: 754
-        width: 251
-        height: 676
+        x: 1798
+        y: 0
+        width: 237
+        height: 643
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: walkRightSheet_7
       rect:
         serializedVersion: 2
-        x: 3619
-        y: 757
-        width: 266
-        height: 673
+        x: 2122
+        y: 0
+        width: 216
+        height: 647
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: walkRightSheet_8
       rect:
         serializedVersion: 2
-        x: 4130
-        y: 757
-        width: 244
-        height: 673
+        x: 2442
+        y: 0
+        width: 195
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: walkRightSheet_9
       rect:
         serializedVersion: 2
-        x: 4643
-        y: 761
-        width: 212
-        height: 669
+        x: 2766
+        y: 0
+        width: 170
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: walkRightSheet_10
       rect:
         serializedVersion: 2
-        x: 5154
-        y: 755
-        width: 189
-        height: 675
+        x: 3090
+        y: 0
+        width: 150
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: walkRightSheet_11
       rect:
         serializedVersion: 2
-        x: 5674
-        y: 761
-        width: 150
-        height: 669
+        x: 3410
+        y: 0
+        width: 129
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: walkRightSheet_12
       rect:
         serializedVersion: 2
-        x: 6186
-        y: 757
-        width: 145
-        height: 673
+        x: 3734
+        y: 0
+        width: 104
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: walkRightSheet_13
       rect:
         serializedVersion: 2
-        x: 6698
-        y: 761
-        width: 124
-        height: 669
+        x: 4037
+        y: 0
+        width: 120
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: walkRightSheet_14
       rect:
         serializedVersion: 2
-        x: 7178
-        y: 754
-        width: 161
-        height: 676
+        x: 4340
+        y: 0
+        width: 146
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: walkRightSheet_15
       rect:
         serializedVersion: 2
-        x: 7658
-        y: 755
-        width: 187
-        height: 675
+        x: 4639
+        y: 0
+        width: 175
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: walkRightSheet_16
       rect:
         serializedVersion: 2
-        x: 8147
-        y: 757
-        width: 204
-        height: 673
+        x: 4938
+        y: 0
+        width: 200
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +354,10 @@ TextureImporter:
       name: walkRightSheet_17
       rect:
         serializedVersion: 2
-        x: 8635
-        y: 761
-        width: 228
-        height: 669
+        x: 5237
+        y: 0
+        width: 229
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +367,10 @@ TextureImporter:
       name: walkRightSheet_18
       rect:
         serializedVersion: 2
-        x: 9116
-        y: 755
-        width: 267
-        height: 675
+        x: 5536
+        y: 0
+        width: 245
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,10 +380,10 @@ TextureImporter:
       name: walkRightSheet_19
       rect:
         serializedVersion: 2
-        x: 9612
-        y: 757
-        width: 275
-        height: 673
+        x: 5835
+        y: 0
+        width: 254
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +393,10 @@ TextureImporter:
       name: walkRightSheet_20
       rect:
         serializedVersion: 2
-        x: 10109
-        y: 768
-        width: 281
-        height: 662
+        x: 6134
+        y: 0
+        width: 262
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,10 +406,10 @@ TextureImporter:
       name: walkRightSheet_21
       rect:
         serializedVersion: 2
-        x: 10619
-        y: 768
-        width: 267
-        height: 662
+        x: 6438
+        y: 0
+        width: 265
+        height: 643
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: walkRightSheet_22
       rect:
         serializedVersion: 2
-        x: 11131
-        y: 768
-        width: 237
-        height: 662
+        x: 6766
+        y: 0
+        width: 241
+        height: 647
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,10 +432,10 @@ TextureImporter:
       name: walkRightSheet_23
       rect:
         serializedVersion: 2
-        x: 11636
-        y: 761
-        width: 226
-        height: 669
+        x: 7094
+        y: 0
+        width: 212
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,10 +445,10 @@ TextureImporter:
       name: walkRightSheet_24
       rect:
         serializedVersion: 2
-        x: 12159
-        y: 757
-        width: 177
-        height: 673
+        x: 7422
+        y: 0
+        width: 183
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: walkRightSheet_25
       rect:
         serializedVersion: 2
-        x: 12660
-        y: 761
-        width: 172
-        height: 669
+        x: 7742
+        y: 0
+        width: 166
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,10 +471,10 @@ TextureImporter:
       name: walkRightSheet_26
       rect:
         serializedVersion: 2
-        x: 13187
-        y: 761
-        width: 133
-        height: 669
+        x: 8057
+        y: 0
+        width: 150
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,426 +484,10 @@ TextureImporter:
       name: walkRightSheet_27
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8377
         y: 0
-        width: 138
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_28
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 0
-        width: 149
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_29
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 0
-        width: 212
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_30
-      rect:
-        serializedVersion: 2
-        x: 1438
-        y: 0
-        width: 263
-        height: 664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_31
-      rect:
-        serializedVersion: 2
-        x: 1941
-        y: 0
-        width: 250
-        height: 665
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_32
-      rect:
-        serializedVersion: 2
-        x: 2437
-        y: 0
-        width: 272
-        height: 665
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_33
-      rect:
-        serializedVersion: 2
-        x: 2934
-        y: 0
-        width: 259
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_34
-      rect:
-        serializedVersion: 2
-        x: 3437
-        y: 0
-        width: 260
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_35
-      rect:
-        serializedVersion: 2
-        x: 3941
-        y: 0
-        width: 252
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_36
-      rect:
-        serializedVersion: 2
-        x: 4442
-        y: 0
-        width: 240
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_37
-      rect:
-        serializedVersion: 2
-        x: 4957
-        y: 0
-        width: 220
-        height: 664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_38
-      rect:
-        serializedVersion: 2
-        x: 5462
-        y: 0
-        width: 203
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_39
-      rect:
-        serializedVersion: 2
-        x: 5974
-        y: 0
-        width: 180
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_40
-      rect:
-        serializedVersion: 2
-        x: 6481
-        y: 0
-        width: 165
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_41
-      rect:
-        serializedVersion: 2
-        x: 7005
-        y: 0
-        width: 133
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_42
-      rect:
-        serializedVersion: 2
-        x: 7497
-        y: 0
-        width: 138
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_43
-      rect:
-        serializedVersion: 2
-        x: 8001
-        y: 0
-        width: 138
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_44
-      rect:
-        serializedVersion: 2
-        x: 8474
-        y: 0
-        width: 169
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_45
-      rect:
-        serializedVersion: 2
-        x: 8974
-        y: 0
-        width: 180
-        height: 664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_46
-      rect:
-        serializedVersion: 2
-        x: 9454
-        y: 0
-        width: 220
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_47
-      rect:
-        serializedVersion: 2
-        x: 9942
-        y: 0
-        width: 244
-        height: 664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_48
-      rect:
-        serializedVersion: 2
-        x: 10427
-        y: 0
-        width: 263
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_49
-      rect:
-        serializedVersion: 2
-        x: 10935
-        y: 0
-        width: 259
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_50
-      rect:
-        serializedVersion: 2
-        x: 11435
-        y: 0
-        width: 261
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_51
-      rect:
-        serializedVersion: 2
-        x: 11935
-        y: 0
-        width: 259
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_52
-      rect:
-        serializedVersion: 2
-        x: 12439
-        y: 0
-        width: 252
-        height: 650
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_53
-      rect:
-        serializedVersion: 2
-        x: 12950
-        y: 0
-        width: 229
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_54
-      rect:
-        serializedVersion: 2
-        x: 13451
-        y: 0
-        width: 216
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_55
-      rect:
-        serializedVersion: 2
-        x: 13966
-        y: 0
-        width: 197
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_56
-      rect:
-        serializedVersion: 2
-        x: 14470
-        y: 0
-        width: 189
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_57
-      rect:
-        serializedVersion: 2
-        x: 14984
-        y: 0
-        width: 156
-        height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_58
-      rect:
-        serializedVersion: 2
-        x: 15494
-        y: 0
-        width: 149
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: walkRightSheet_59
-      rect:
-        serializedVersion: 2
-        x: 16002
-        y: 0
-        width: 126
-        height: 658
+        width: 129
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
