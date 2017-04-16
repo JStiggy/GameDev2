@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
     public GameObject playerPrefab;
     [HideInInspector]
     public GameObject playerReference;
+    [HideInInspector]
+    public float xPos = 0;
+    [HideInInspector]
+    public float yPos = 0;
+
 
     //Create a singleton to contain all Gamedata
     private static GameManager manager = null;
@@ -23,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        print("Called");
         SceneManager.sceneLoaded += FadeIn;
         if (manager != this && manager != null)
         {
@@ -36,6 +42,9 @@ public class GameManager : MonoBehaviour
             print("Loaded");
 
             HandleSaveData();
+            //ENABLED IN FINAL VERSION
+            //xPos = playerData.saveXPosition;
+            //yPos = playerData.saveYPosition;
         }
     }
 
@@ -52,6 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void PlacePlayer(float xPos, float yPos)
     {
+
         playerReference.transform.position = new Vector3(xPos, yPos);
     }
 
@@ -62,10 +72,19 @@ public class GameManager : MonoBehaviour
 
     public void ReloadGame()
     {
-        //playerData = playerData.Load();
-        //For alpha
+            
+        //For alpha REMOVED IN FINAL VERSION
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //FadeOut(playerData.saveScene);
+        playerReference = GameObject.FindGameObjectWithTag("Player");
+        //PlacePlayer(xPos, yPos);
+
+        //For final version, ENABLED IN FINAL VERSION
+        //xPos = playerData.saveXPosition;
+        //yPos = playerData.saveYPosition;
+        //playerData = playerData.Load();
+        //SceneManager.LoadScene(playerData.saveScene);
+        //playerReference = GameObject.FindGameObjectWithTag("Player");
+        //PlacePlayer(xPos, yPos);
     }
 
     public void DecreaseEnergy(float energyConsumption)
@@ -76,14 +95,17 @@ public class GameManager : MonoBehaviour
         }
         if (playerData.energyReserve <= 0)
         {
-            print("Game Over: things go here");
+            ReloadGame();
         }
     }
 
     public void FadeIn(Scene scene, LoadSceneMode lsm)
     {
+        playerReference = GameObject.FindGameObjectWithTag("Player");
         object[] tmp = { -1, null };
         GetComponent<FadeSystem>().StartCoroutine("PerformFade", tmp);
+        //EMABLED IN FINAL VERSION
+        //PlacePlayer(xPos, yPos);
     }
 
     public void FadeOut(string scene)
