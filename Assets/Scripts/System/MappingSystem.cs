@@ -29,7 +29,7 @@ public class MappingSystem : MonoBehaviour {
             {
                 if (mapData[i, j] != -1)
                 {
-                    GameObject tmp = Instantiate(mapTile, new Vector3(50 + 20 * j, -50 - 20 * i, 0) + transform.position, Quaternion.identity);
+                    GameObject tmp = Instantiate(mapTile, new Vector3(900 + 20 * j, -150 - 20 * i, 0) + transform.position, Quaternion.identity);
                     tmp.transform.SetParent(this.transform, true);
                     uiIcons[count] = tmp.GetComponent<Image>();
                     tmp.SetActive(false);
