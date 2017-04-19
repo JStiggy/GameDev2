@@ -85,6 +85,15 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", Grounded);
         anim.SetBool("gliding", Glide);
         anim.SetFloat("xVel", moveDirection);
+
+
+		if (data.playerData.energyReserve <= 0f) 
+		{
+			Glide = false;
+			EndGlide = true;
+			shield_on = false;
+			EnhancedJump = false;
+		}
         
         if(shield_on)
         {

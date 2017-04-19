@@ -8,6 +8,7 @@ public class BlockedObject : MonoBehaviour {
     public bool DestroyUponBlock;
     public bool BreakShield;
 
+	/*
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.GetComponent<Shield> ()) {
@@ -17,4 +18,5 @@ public class BlockedObject : MonoBehaviour {
 				col.gameObject.SetActive (false);
 		}
 	}
+	*/
 }
