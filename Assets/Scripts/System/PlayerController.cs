@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
     private bool shield_on = false;
     Magnetizable magObj = null;
 
+	public bool GetShieldOn()
+	{
+		return shield_on;
+	}
+
     void Awake()
     {
         rb = this.GetComponent<Rigidbody2D>();
