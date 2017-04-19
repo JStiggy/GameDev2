@@ -68,8 +68,17 @@ public class PlayerController : MonoBehaviour
         {
             facingDirection = (int)moveDirection;
         }
-        Grounded = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1 << 8));
 
+		//Grounded test
+		Collider2D ground;
+        ground = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1 << 8));
+
+		if (ground)
+			Grounded = (ground.tag == "Ground");
+		else
+			Grounded = false;
+
+		//Gliding status test
         EndGlide = Input.GetKeyUp(KeyCode.U) || Grounded;
         Glide = Input.GetKey(KeyCode.U) && !Grounded;
 
