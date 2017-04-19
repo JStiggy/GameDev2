@@ -150,7 +150,6 @@ public class PlayerController : MonoBehaviour
             Glide = false;
             rb.AddForce(transform.up * rb.gravityScale * 0.9f * Physics2D.gravity.y);
         }
-
         if(BasicJump)
         {
             rb.AddForce(new Vector2(0f, JumpBoost));
