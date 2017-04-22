@@ -1,10 +1,18 @@
 fileFormatVersion: 2
 guid: c4947b8780706478688e2f1e11aefefd
-timeCreated: 1487181428
+timeCreated: 1492820197
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - data: {instanceID: 0}
+  - shield: {instanceID: 0}
+  - UI: {fileID: 1317794887244078, guid: ba6019fe5213c364c810854c9513d0e4, type: 2}
+  - eyes: {fileID: 1317794887244078, guid: ba6019fe5213c364c810854c9513d0e4, type: 2}
+  - magnet: {fileID: 1317794887244078, guid: ba6019fe5213c364c810854c9513d0e4, type: 2}
+  - momentum: {fileID: 1317794887244078, guid: ba6019fe5213c364c810854c9513d0e4, type: 2}
+  - rocket: {fileID: 1317794887244078, guid: ba6019fe5213c364c810854c9513d0e4, type: 2}
+  - barrier: {fileID: 1317794887244078, guid: ba6019fe5213c364c810854c9513d0e4, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

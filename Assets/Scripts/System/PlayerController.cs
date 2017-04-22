@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,12 +15,16 @@ public class PlayerController : MonoBehaviour
 
     public GameObject shield;
 
+    public GameObject UI;
+    
+
     [HideInInspector]
     int facingDirection = 1;
     public float moveDirection;
 
     public bool control = true;
     public bool activate = false;
+
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -42,7 +47,17 @@ public class PlayerController : MonoBehaviour
     private bool shield_on = false;
     Magnetizable magObj = null;
 
-	public bool GetShieldOn()
+    /*UI*/
+    private GameObject eyes;
+    private GameObject magnet;
+    private GameObject momentum;
+    private GameObject rocket;
+    private GameObject barrier;
+
+    private float alpha;
+
+
+    public bool GetShieldOn()
 	{
 		return shield_on;
 	}
@@ -51,6 +66,33 @@ public class PlayerController : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
+        UI = GameObject.Find("UI");
+        Transform[] ts = UI.transform.GetComponentsInChildren<Transform>();
+        foreach (Transform t in ts)
+        {
+            if(t.gameObject.name == "Eyes")
+            {
+                eyes = t.gameObject;
+            }
+            else if(t.gameObject.name == "Magnet")
+            {
+                magnet = t.gameObject;
+            }
+            else if(t.gameObject.name == "Momentum")
+            {
+                momentum = t.gameObject;
+            }
+            else if(t.gameObject.name == "Rocket")
+            {
+                rocket = t.gameObject;
+            }
+            else if(t.gameObject.name == "Barrier")
+            {
+                barrier = t.gameObject;
+            }
+        }
+        Color temp = barrier.GetComponent<Image>().color;
+        alpha = temp.a;
     }
 
     void Update()
@@ -99,6 +141,9 @@ public class PlayerController : MonoBehaviour
         {
             shield.SetActive(true);
 			data.playerData.energyReserve -= 2f * Time.deltaTime;
+            Color temp = barrier.GetComponent<Image>().color;
+            temp.a += 30;
+            barrier.GetComponent<Image>().color = temp;
         }
         else
         {
@@ -108,6 +153,9 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.K))
         {
             shield_on = !shield_on;
+            Color temp = barrier.GetComponent<Image>().color;
+            temp.a = alpha;
+            barrier.GetComponent<Image>().color = temp;
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -127,18 +175,26 @@ public class PlayerController : MonoBehaviour
             {
                 magObj = col.gameObject.GetComponent<Magnetizable>();
                 magObj.magnetized = true;
+                Color temp = magnet.GetComponent<Image>().color;
+                temp.a += 30;
+                magnet.GetComponent<Image>().color = temp;
             }
         }
         else if (Input.GetKeyDown(KeyCode.I) && magObj != null)
         {
             magObj.magnetized = false;
             magObj = null;
+            Color temp = magnet.GetComponent<Image>().color;
+            temp.a = alpha;
+            magnet.GetComponent<Image>().color = temp;
         }
 
         if(Input.GetKeyDown(KeyCode.Space) && !BasicJump && !EnhancedJump)
         {
             if (Grounded)
-                BasicJump = true;
+            {
+
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.J) && !EnhancedJump && !BasicJump)
@@ -167,11 +223,17 @@ public class PlayerController : MonoBehaviour
             {
                 rb.AddForce(transform.up * rb.gravityScale * 0.9f * (-Physics2D.gravity.y));
             }
+            Color temp = rocket.GetComponentInChildren<Image>().color;
+            temp.a += 30;
+            rocket.GetComponent<Image>().color = temp;
         }
         if(EndGlide)
         {
             Glide = false;
             rb.AddForce(transform.up * rb.gravityScale * 0.9f * Physics2D.gravity.y);
+            Color temp = rocket.GetComponentInChildren<Image>().color;
+            temp.a = alpha;
+            rocket.GetComponent<Image>().color = temp;
         }
         if(BasicJump)
         {
