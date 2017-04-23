@@ -127,8 +127,9 @@ public class Player1 : MonoBehaviour {
                         i = 0;
                         lr.startWidth = 0.15f;
                         i = 0;
-
-                        Destroy(f[ix].collider.gameObject);
+                        if (f[ix].collider.gameObject.GetComponent<PlayerController>().GetShieldOn()!=false)
+                        GameManager.Manager.ReloadGame();
+                        break;
                     }
                     else
                     {
