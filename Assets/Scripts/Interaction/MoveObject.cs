@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObject : Interactable {
+public class MoveObject : Interactable
+{
 
-    public float interp = .0005f;
+    public float speed = 2f;
     public bool constantMotion = true;
     public bool startMoving = false;
 
@@ -14,7 +15,7 @@ public class MoveObject : Interactable {
 
     void Awake()
     {
-        if(startMoving)
+        if (startMoving)
         {
             StartCoroutine("Interact");
         }
@@ -24,13 +25,15 @@ public class MoveObject : Interactable {
     {
         Vector3 dest = aStart ? locationB : locationA;
         Vector3 start = aStart ? locationA : locationB;
-        while (Vector2.Distance(transform.position, dest) > .015)
+        float currentDist;
+        do
         {
-            transform.position -= start - Vector3.Lerp(start, dest, interp);
+            currentDist = Vector3.Distance(transform.position, dest);
+            transform.Translate((dest - start) * speed * Time.deltaTime);
             yield return null;
-        }
+        } while (Vector2.Distance(transform.position, dest) <= currentDist);
         aStart = !aStart;
-        if(constantMotion)
+        if (constantMotion)
         {
             StartCoroutine("Interact");
         }

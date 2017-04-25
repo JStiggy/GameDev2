@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/Blending" {
+﻿Shader "Custom/Blending" {
 	Properties
 	{
 		_AlphaOffset("AlphaOffset", Range(1, 2)) = 1
@@ -37,7 +35,7 @@ Shader "Custom/Blending" {
 	{
 		FragmentData f;
 		f.uv = v.uv.xy;
-		f.position = UnityObjectToClipPos(v.position);
+		f.position = mul(UNITY_MATRIX_MVP, v.position);
 		return f;
 	}
 
