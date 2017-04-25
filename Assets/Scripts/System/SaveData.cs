@@ -11,6 +11,7 @@ using System.Reflection;
 public class SaveData : ISerializable
 {
     public int version = 1;
+    public long saveFlags = 0;
     public float energyReserve = 100f;
 
     public string saveScene = "LabTestRoom";
@@ -32,6 +33,7 @@ public class SaveData : ISerializable
     public SaveData(SerializationInfo info, StreamingContext ctxt)
     {
         //Get the values from info and assign them to the appropriate properties
+        saveFlags = (long)info.GetValue("saveFlags", typeof(long));
         version = (int)info.GetValue("version", typeof(int));
         energyReserve = (float)info.GetValue("energyReserve", typeof(float));
         saveScene = (string)info.GetValue("saveScene", typeof(string));
@@ -53,6 +55,7 @@ public class SaveData : ISerializable
     //Serialization function.
     public void GetObjectData(SerializationInfo info, StreamingContext ctxt)
     {
+        info.AddValue("saveFlags", (saveFlags));
         info.AddValue("version", (version));
         info.AddValue("energyReserve", (energyReserve));
         info.AddValue("saveScene", (saveScene));
