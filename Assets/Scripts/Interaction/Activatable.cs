@@ -18,6 +18,11 @@ public class Activatable : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        interactButton.transform.position = new Vector3(transform.position.x, transform.position.y + GetComponent<SpriteRenderer>().sprite.bounds.max.y * transform.localScale.y + .5f, transform.position.z);
+    }
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -36,8 +41,9 @@ public class Activatable : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player" && collider.gameObject.GetComponent<PlayerController>().activate)
+        if (collider.gameObject.tag == "Player" && collider.gameObject.GetComponent<PlayerController>().activate && interactButton.activeInHierarchy)
         {
+            print("Test");
             foreach (Interactable i in interactableObjects)
             {
                 i.StopAllCoroutines();

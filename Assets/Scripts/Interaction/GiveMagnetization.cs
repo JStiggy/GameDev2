@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GiveSight : Interactable
-{
+public class GiveMagnetization : Interactable {
 
     public override IEnumerator Interact()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<CreateShadows>().distance = 5;
+        //Would enable Magnetization here
         Destroy(this.gameObject);
         return null;
     }
+
 }

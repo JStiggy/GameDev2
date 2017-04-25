@@ -7,13 +7,13 @@ public class MagnetizeObject : Interactable
 
     public override IEnumerator Interact()
     {
-        if(gameObject.layer == 1)
+        if(gameObject.layer == 0)
         {
             gameObject.layer = 9;
         }
         else
         {
-            gameObject.layer = 1;
+            gameObject.layer = 0;
         }
         return null;
     }
