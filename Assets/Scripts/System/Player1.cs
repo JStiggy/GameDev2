@@ -81,7 +81,7 @@ public class Player1 : MonoBehaviour {
 		direction.Normalize ();
         Vector3 offset = AIM.transform.position - transform.position;
         float sqrLen = offset.sqrMagnitude;
-        transform.localScale = new Vector3(0.3f, 0.3f, 1.0f);
+        
 
 
         Vector3 currentPosition = transform.position;
