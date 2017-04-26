@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
     private Rigidbody2D rb;
+	private float FatalYVelocity = 0f;
 
     private bool Grounded = false;
 
@@ -111,6 +112,7 @@ public class PlayerController : MonoBehaviour
             facingDirection = (int)moveDirection;
         }
 
+		/*
 		//Grounded test
 		Collider2D ground;
         ground = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1 << 8));
@@ -119,6 +121,8 @@ public class PlayerController : MonoBehaviour
 			Grounded = (ground.tag == "Ground");
 		else
 			Grounded = false;
+		*/
+
 
 		//Gliding status test
         EndGlide = Input.GetKeyUp(KeyCode.U) || Grounded;
@@ -246,5 +250,24 @@ public class PlayerController : MonoBehaviour
             EnhancedJump = false;
         }
     }
-    
+
+	//For currect velocity detection
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		if (col.gameObject.tag == "Ground") {
+			Grounded = true;
+			if (rb.velocity.y >= FatalYVelocity) 
+			{
+				Debug.Log ("Dead");
+			}
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D col)
+	{
+		if(col.gameObject.tag == "Ground")
+		{
+			Grounded = false;
+		}
+	}
 }
