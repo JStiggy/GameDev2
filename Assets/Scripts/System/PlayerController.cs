@@ -4,8 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class CoolDown
+{
+	public bool Magnitize = false;
+	public bool Vision = false;
+	public bool Glide = false;
+	public bool Boost = false;
+	public bool Shield = false;
+}
+
 public class PlayerController : MonoBehaviour
 {
+	public CoolDown AbilityCooldown;
+
     public float WalkSpeed;
     public float JumpBoost;
     public float EnhancedJumpCo;
@@ -27,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
     private Rigidbody2D rb;
-	private float FatalYVelocity = 0f;
+	public float FatalYVelocity = 0f;
 
     private bool Grounded = false;
 
