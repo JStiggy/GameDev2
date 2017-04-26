@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float JumpBoost;
     public float EnhancedJumpCo;
     public float RunSpeed;
-    public float EnhancedBoostDuration;
+    public float BoostDuration;
 	public GameManager data;
 
     public GameObject shield;
@@ -25,9 +25,9 @@ public class PlayerController : MonoBehaviour
     public bool control = true;
     public bool activate = false;
 
-
     private Animator anim;
     private Rigidbody2D rb;
+	private float FatalYVelocity = 0f;
 
     private bool Grounded = false;
 
@@ -47,6 +47,9 @@ public class PlayerController : MonoBehaviour
     private bool shield_on = false;
     Magnetizable magObj = null;
 
+	/*Boost*/
+	private float boost = 0f;
+
     /*UI*/
     private GameObject eyes;
     private GameObject magnet;
@@ -55,7 +58,6 @@ public class PlayerController : MonoBehaviour
     private GameObject barrier;
 
     private float alpha;
-
 
     public bool GetShieldOn()
 	{
@@ -111,6 +113,7 @@ public class PlayerController : MonoBehaviour
             facingDirection = (int)moveDirection;
         }
 
+		/*
 		//Grounded test
 		Collider2D ground;
         ground = Physics2D.OverlapCircle(transform.position - new Vector3(0, .8f, 0), .4f, ~(1 << 8));
@@ -119,6 +122,8 @@ public class PlayerController : MonoBehaviour
 			Grounded = (ground.tag == "Ground");
 		else
 			Grounded = false;
+		*/
+
 
 		//Gliding status test
         EndGlide = Input.GetKeyUp(KeyCode.U) || Grounded;
@@ -193,18 +198,22 @@ public class PlayerController : MonoBehaviour
         {
             if (Grounded)
             {
-
+				if (boost > 0f)
+					BasicJump = true;
+				else 
+				{
+					EnhancedJump = true;
+				}
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.J) && !EnhancedJump && !BasicJump)
+		if(Input.GetKeyDown(KeyCode.J) && boost <= 0f)
         {
-			if (Grounded) 
-			{
-				EnhancedJump = true;
-				data.playerData.energyReserve -= 3f;
-			}
+			boost = BoostDuration;
         }
+
+		if(boost > 0f)
+			boost -= Time.deltaTime;
     }
 
     void FixedUpdate()
@@ -246,5 +255,24 @@ public class PlayerController : MonoBehaviour
             EnhancedJump = false;
         }
     }
-    
+
+	//For currect velocity detection
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		if (col.gameObject.tag == "Ground") {
+			Grounded = true;
+			if (rb.velocity.y >= FatalYVelocity) 
+			{
+				Debug.Log ("Dead");
+			}
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D col)
+	{
+		if(col.gameObject.tag == "Ground")
+		{
+			Grounded = false;
+		}
+	}
 }
