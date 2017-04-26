@@ -14,19 +14,29 @@ public class Player1 : MonoBehaviour {
     private bool pressed = false;
     bool enter = false;
     public GameObject forw;
+    float originalz;
     LineRenderer lr;
+    bool initiate = false;
+    public float maxangle = 90;
+    bool done;
+    Rigidbody2D rb;
     // Use this for initialization
 
     
 
    
     void Awake () {
+        initiate = false;
 		moveDirection = Vector2.up;
         enter = false;
         lr = this.GetComponent<LineRenderer>();
-        AIM=GameObject.FindGameObjectWithTag("Player");
+        rb = GetComponent<Rigidbody2D>();
+        
 
-
+    }
+    private void Start()
+    {
+        done = false;
     }
 
     // Update is called once per frame
@@ -37,8 +47,8 @@ public class Player1 : MonoBehaviour {
         if (other.gameObject.tag=="Player")
         {
             enter = true;
-            
-           
+            AIM = other.gameObject;
+
         }
     }
     
@@ -48,11 +58,15 @@ public class Player1 : MonoBehaviour {
         {
             enter = false;
             i = 0;
+            AIM = null;
         }
         
     }
     
     void Update () {
+        if (done) { AIM = null; rb.gravityScale = 1; forw.transform.localScale = new Vector3(0,0, 0); lr.startWidth = 0; }
+        if (AIM == null) { enter = false; i = 0; return; }
+        print(gameObject.transform.rotation.eulerAngles.z + "  ----  " + originalz);
         pressed = true;
         if (lr.startWidth > 0)
         {
@@ -60,9 +74,9 @@ public class Player1 : MonoBehaviour {
             if (lr.startWidth < 0) lr.startWidth = 0;
         }
         if (enter && pressed)i++;
-        if (i<=60)forw.transform.localScale = new Vector3(i * 0.5f / 60f, i * 0.5f / 60f, i * 0.5f / 60f);
-        if (i > 60) forw.transform.localScale = new Vector3(60f * 0.5f / 60f, 60f * 0.5f / 60f, 60f * 0.5f / 60f);
-        
+        if (i<=30)forw.transform.localScale = new Vector3(i * 0.5f / 30f, i * 0.5f / 30f, i * 0.5f / 30f);
+        if (i > 30) forw.transform.localScale = new Vector3(60f * 0.5f / 30f, 30f * 0.5f / 30f, 30f * 0.5f / 30f);
+
 
 
 
@@ -76,7 +90,13 @@ public class Player1 : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (new Vector3(Vector3.Angle(new Vector3(1f, 0f, 0f), direction), 0f, 
 			Vector3.Angle(new Vector3(0f, 1f, 0f), direction)));
 */
-        if (AIM == null) { enter = false; i = 0; return; }
+        if (initiate == false)
+        {
+            originalz = transform.rotation.eulerAngles.z;
+            print(gameObject.transform.rotation.eulerAngles.z + " dsdsds ----sdsd sdsd " + originalz);
+            initiate = true;
+        }
+        
         Vector3 direction = AIM.transform.position - transform.position;
 		direction.Normalize ();
         Vector3 offset = AIM.transform.position - transform.position;
@@ -91,16 +111,20 @@ public class Player1 : MonoBehaviour {
 		moveDirection.Normalize();
         Quaternion _lookRotation = Quaternion.LookRotation(moveDirection);
         Vector3 target = moveDirection * moveSpeed + currentPosition;                                                 
-		transform.position = Vector3.Lerp( currentPosition, currentPosition, Time.deltaTime );
+		
 		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = 
 			Quaternion.Slerp( transform.rotation, 
 				Quaternion.Euler( 1, 1, targetAngle ), 
 				turnSpeed * Time.deltaTime );
+        if (Mathf.Abs(gameObject.transform.rotation.eulerAngles.z - originalz) >=maxangle)
+        {
+            done = true;
+        }
 
-		
+
             if (enter && pressed )  {
-                if (i >= 60) {
+                if (i >= 30) {
                     RaycastHit2D[] f = Physics2D.RaycastAll(transform.position, transform.right, 1000f);
                     for (int ix = 0; ix < f.Length; ix++)
                     {
