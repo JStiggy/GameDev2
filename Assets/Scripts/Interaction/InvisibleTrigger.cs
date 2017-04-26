@@ -31,6 +31,6 @@ public class InvisibleTrigger : MonoBehaviour {
             Destroy(gameObject);
         }
         GameManager.Manager.playerData.saveFlags = GameManager.Manager.playerData.saveFlags | ((long)1 << SaveFlag);
-        //GameManager.Manager.playerData.Save(); //This would save it but need to test everything
+        GameManager.Manager.playerData.Save(); //This would save it but need to test everything
     }
 }

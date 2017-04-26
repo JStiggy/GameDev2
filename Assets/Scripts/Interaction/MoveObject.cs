@@ -11,7 +11,8 @@ public class MoveObject : Interactable
 
     public Vector3 locationA;
     public Vector3 locationB;
-    bool aStart = true;
+    [HideInInspector]
+    public bool aStart = true;
 
     void Awake()
     {
@@ -26,13 +27,21 @@ public class MoveObject : Interactable
         Vector3 dest = aStart ? locationB : locationA;
         Vector3 start = aStart ? locationA : locationB;
         float currentDist;
-        do
+        currentDist = Vector3.Distance(transform.position, dest);
+        transform.Translate((dest - start).normalized * speed * Time.deltaTime);
+        yield return null;
+        while (Vector2.Distance(transform.position, dest) <= currentDist)
         {
             currentDist = Vector3.Distance(transform.position, dest);
-            transform.Translate((dest - start) * speed * Time.deltaTime);
+            transform.Translate((dest - start).normalized * speed * Time.deltaTime);
+            if(!(Vector2.Distance(transform.position, dest) <= currentDist))
+            {
+                break;
+            }
             yield return null;
-        } while (Vector2.Distance(transform.position, dest) <= currentDist);
+        }
         aStart = !aStart;
+        transform.position = dest;
         if (constantMotion)
         {
             StartCoroutine("Interact");
