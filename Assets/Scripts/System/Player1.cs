@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Player1 : MonoBehaviour {
 
 	public GameObject AIM;
@@ -8,7 +10,7 @@ public class Player1 : MonoBehaviour {
 	public float moveSpeed;
 	private Vector3 moveDirection;
 	public float turnSpeed;
-    private int i = 0;
+    private float i = 0;
     private int j = 0;
     private int persis = 0;
     private bool pressed = false;
@@ -73,9 +75,9 @@ public class Player1 : MonoBehaviour {
             lr.startWidth -= 0.03f;
             if (lr.startWidth < 0) lr.startWidth = 0;
         }
-        if (enter && pressed)i++;
-        if (i<=30)forw.transform.localScale = new Vector3(i * 0.5f / 30f, i * 0.5f / 30f, i * 0.5f / 30f);
-        if (i > 30) forw.transform.localScale = new Vector3(60f * 0.5f / 30f, 30f * 0.5f / 30f, 30f * 0.5f / 30f);
+        if (enter && pressed)i+=Time.deltaTime;
+        if (i<=1.0)forw.transform.localScale = new Vector3(i/ Time.deltaTime * 0.5f / 30f, i/ Time.deltaTime * 0.5f / 30f, i/ Time.deltaTime * 0.5f / 30f);
+        
 
 
 
@@ -124,7 +126,7 @@ public class Player1 : MonoBehaviour {
 
 
             if (enter && pressed )  {
-                if (i >= 30) {
+                if (i >= 1) {
                     RaycastHit2D[] f = Physics2D.RaycastAll(transform.position, transform.right, 1000f);
                     for (int ix = 0; ix < f.Length; ix++)
                     {
@@ -151,8 +153,8 @@ public class Player1 : MonoBehaviour {
                         i = 0;
                         lr.startWidth = 0.15f;
                         i = 0;
-                        if (f[ix].collider.gameObject.GetComponent<PlayerController>().GetShieldOn()!=false)
-                        GameManager.Manager.ReloadGame();
+                        if (f[ix].collider.gameObject.GetComponent<PlayerController>().GetShieldOn() == false)
+                        { GameManager.Manager.FadeOut(SceneManager.GetActiveScene().name); return; }
                         break;
                     }
                     else
