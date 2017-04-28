@@ -36,7 +36,12 @@ Sight Systems repaired
     //2: First conversation with Mainframe
     <Dialouge>
       <text>
-        <text> I neeed sushi!!
+        <text>Reinitializing... all systems successfully rebooted. Identifying unit... unit identified as a model NX, factory number 01.
+Hello! It has been -ERROR- years since my last activation. My apologies, it seems there memory leaks within my database. Locating... 
+        </text>
+<text>This will take some time to fix.  In the meantime, it appears this facility has undergone vast changes during my absence.
+I am unable to detect any signs of life or map out the area.  I detect that your mobility functions are fully operational.
+As such, I propose that we sync up vision so that I may map out the area as you explore it.  We robots should stick together during such unquantifiable situations, after all.
         </text>
 
       </text>
@@ -46,7 +51,8 @@ Sight Systems repaired
     //3: Mainframe up until you get power core
     <Dialouge>
       <text>
-        <text> Woah, Looking cool, Joker!
+        <text> Parsing... Oh, hello again NX-01.  How goes the data-gathering?  If you can find a path out to ground zero, I may be able to restore communications with the outside world.
+As such, please keep working hard. I estimate high probability that you shall succeed. Human's define this estimate as the term 'faith', I believe.
         </text>
 
       </text>
@@ -58,9 +64,13 @@ Sight Systems repaired
     //4: Mainframe after power core
     <Dialouge>
       <text>
-        <text> Now's our chance to strike! Go!
+        <text> NX-01, I-  AAAAE-A-A-I-A-U-0101010101010101111100110000011
         </text>
-
+<text> ........................................................................................................................
+...............................................................................................................................
+        </text>
+<text> ... Please come back with that power core, robot.  It will grant me the resources to renable my higher energy-cost functions such as the one that lets me re-establish contact with those humans.
+        </text>
 
       </text>
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
@@ -72,7 +82,8 @@ Sight Systems repaired
   //5: Magnet Machine explodes, Mainframe expresses concern
     <Dialouge>
       <text>
-        <text> Gah... I got too reckless... I'll back out and focus on support!
+        <text> That was quite the malfunction! You did not recieve any damage from that explosion did you, Unit NX-01?
+I recommend heading back to the nearest recharge station to conduct a status check.
         </text>
 
 
@@ -84,11 +95,9 @@ Sight Systems repaired
 
 //6: Mainframe ponders at Hover Room
     <Dialouge>
-      <text>//You did not add enough
-        <text>
-          Its almost scary how good I am!Its almost scary how good I am!
-          Its almost scary how good I am!Its almost scary how good I am!
-          Its almost scary how good I am!Its almost scary how good I am!
+      <text>
+        <text>It is beyond any fathomable calculation of mine what must have occurred for the facility to change this much, regardless of how much the passage of time has affected it.
+I also do not have any records of this testing facility in my database... There are too many unknown variables, I need more information in order to properly assess the situation.
         </text>
 
 
