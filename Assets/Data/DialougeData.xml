@@ -36,13 +36,21 @@ Sight Systems repaired
     //2: First conversation with Mainframe
     <Dialouge>
       <text>
-        <text>Reinitializing... all systems successfully rebooted. Identifying unit... unit identified as a model NX, factory number 01.
-Hello! It has been -ERROR- years since my last activation. My apologies, it seems there memory leaks within my database. Locating... 
+        <text>Reinitializing... all systems successfully rebooted.
+Identifying unit... unit identified as a model NX, factory number 01.
+Hello! It has been -ERROR- years since my last activation.
+My apologies, it seems there memory leaks within my database.
+Locating... 
         </text>
-<text>This will take some time to fix.  In the meantime, it appears this facility has undergone vast changes during my absence.
-I am unable to detect any signs of life or map out the area.  I detect that your mobility functions are fully operational.
-As such, I propose that we sync up vision so that I may map out the area as you explore it.  We robots should stick together during such unquantifiable situations, after all.
+<text>This will take some time to fix.  In the meantime, it appears
+this facility has undergone vast changes during my absence.
+I am unable to detect any signs of life or map out the area.
         </text>
+<text>I detect that your mobility functions are fully operational.
+As such, I propose that we sync up vision so I may map out
+the area as you explore it. We robots should stick together
+during such unquantifiable situations, after all.
+	</text>
 
       </text>
       <autoScroll> 1 </autoScroll>
@@ -51,8 +59,11 @@ As such, I propose that we sync up vision so that I may map out the area as you 
     //3: Mainframe up until you get power core
     <Dialouge>
       <text>
-        <text> Parsing... Oh, hello again NX-01.  How goes the data-gathering?  If you can find a path out to ground zero, I may be able to restore communications with the outside world.
-As such, please keep working hard. I estimate high probability that you shall succeed. Human's define this estimate as the term 'faith', I believe.
+        <text> Parsing... Oh, hello again NX-01. How goes the data-gathering?
+If you can find a path out to ground zero, I may be able to restore
+communications with the outside world. As such, please keep working hard.
+I estimate high probability that you shall succeed.
+Our creators defined this estimate as 'faith', I believe.
         </text>
 
       </text>
@@ -64,12 +75,17 @@ As such, please keep working hard. I estimate high probability that you shall su
     //4: Mainframe after power core
     <Dialouge>
       <text>
-        <text> NX-01, I-  AAAAE-A-A-I-A-U-0101010101010101111100110000011
+        <text> NX-01, I-  AAAAE-A-A-I-A-U-010100001101
         </text>
-<text> ........................................................................................................................
-...............................................................................................................................
+<text> ......................................
+......................................
+......................................
+......................................
         </text>
-<text> ... Please come back with that power core, robot.  It will grant me the resources to renable my higher energy-cost functions such as the one that lets me re-establish contact with those humans.
+<text> ... Please come back with that power core, robot. It will
+grant me the resources to renable my higher energy-cost
+functions such as the one that lets me 
+re-establish contact with the humans.
         </text>
 
       </text>
@@ -82,8 +98,10 @@ As such, please keep working hard. I estimate high probability that you shall su
   //5: Magnet Machine explodes, Mainframe expresses concern
     <Dialouge>
       <text>
-        <text> That was quite the malfunction! You did not recieve any damage from that explosion did you, Unit NX-01?
-I recommend heading back to the nearest recharge station to conduct a status check.
+        <text> That was quite the malfunction!
+Have you sustained any damage from the explosion, NX-01?
+I recommend heading back to the nearest recharge station
+and conducting a status check.
         </text>
 
 
@@ -96,8 +114,10 @@ I recommend heading back to the nearest recharge station to conduct a status che
 //6: Mainframe ponders at Hover Room
     <Dialouge>
       <text>
-        <text>It is beyond any fathomable calculation of mine what must have occurred for the facility to change this much, regardless of how much the passage of time has affected it.
-I also do not have any records of this testing facility in my database... There are too many unknown variables, I need more information in order to properly assess the situation.
+        <text>It is beyond any fathomable calculation of mine what
+must have occurred for the facility to change this much,
+regardless of how much the passage of time has affected it.
+I do not possess records of this testing facility in my database...
         </text>
 
 
