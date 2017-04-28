@@ -138,6 +138,37 @@ Detect meanings outside of normal vision by pressing P
       //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
       <autoScroll> 1 </autoScroll>
     </Dialouge>
-    
+
+    //9: Gain Hover
+    <Dialouge>
+      <text>
+
+        <text>
+          Initiating Updates...
+          Propulsion System functions restored
+          Slow descent and traverse gaps by using U
+        </text>
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+    //10: Gain Shield systems
+    <Dialouge>
+      <text>
+
+        <text>Initiating Updates...
+Energy Limiters disenaged, systems granted access
+Create a shield to block Energy attacks from harming you
+        </text>
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
   </Dialouges>
  </DialougeData>
