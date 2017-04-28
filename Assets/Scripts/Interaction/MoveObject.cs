@@ -6,6 +6,7 @@ public class MoveObject : Interactable
 {
 
     public float speed = 2f;
+    public float delay = 0f;
     public bool constantMotion = true;
     public bool startMoving = false;
 
@@ -52,6 +53,7 @@ public class MoveObject : Interactable
         transform.position = dest;
         if (constantMotion)
         {
+            yield return new WaitForSeconds(delay);
             StartCoroutine("Interact");
         }
         yield return null;

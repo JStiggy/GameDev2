@@ -80,9 +80,9 @@ public class GameManager : MonoBehaviour
         xPos = playerData.saveXPosition;
         yPos = playerData.saveYPosition;
         playerData = playerData.Load();
-        SceneManager.LoadScene(playerData.saveScene);
-        playerReference = GameObject.FindGameObjectWithTag("Player");
-        PlacePlayer(xPos, yPos);
+        FadeOut(playerData.saveScene);
+        //playerReference = GameObject.FindGameObjectWithTag("Player");
+        //PlacePlayer(xPos, yPos);
     }
 
     public void DecreaseEnergy(float energyConsumption)
