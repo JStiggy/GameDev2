@@ -21,6 +21,7 @@ public class Player1 : MonoBehaviour {
     bool initiate = false;
     public float maxangle = 90;
     bool done;
+    public float delaysecond=1;
     Rigidbody2D rb;
     // Use this for initialization
 
@@ -68,7 +69,12 @@ public class Player1 : MonoBehaviour {
     
     void Update () {
         if (done) { AIM = null; rb.gravityScale = 1; forw.transform.localScale = new Vector3(0,0, 0); lr.startWidth = 0; }
-        if (AIM == null) { enter = false; i = 0; return; }
+        if (lr.startWidth > 0)
+        {
+            lr.startWidth -= 0.03f;
+            if (lr.startWidth < 0) lr.startWidth = 0;
+        }
+        if (AIM == null) { enter = false; i = 0; forw.transform.localScale =new Vector3(0,0,0); return; }
         print(gameObject.transform.rotation.eulerAngles.z + "  ----  " + originalz);
         pressed = true;
         if (lr.startWidth > 0)
@@ -77,7 +83,7 @@ public class Player1 : MonoBehaviour {
             if (lr.startWidth < 0) lr.startWidth = 0;
         }
         if (enter && pressed)i+=Time.deltaTime;
-        if (i<=1.0)forw.transform.localScale = new Vector3(i/ Time.deltaTime * 0.5f / 30f, i/ Time.deltaTime * 0.5f / 30f, i/ Time.deltaTime * 0.5f / 30f);
+        if (i<= delaysecond) forw.transform.localScale = new Vector3(i/ Time.deltaTime * 0.5f / 30f, i/ Time.deltaTime * 0.5f / 30f, i/ Time.deltaTime * 0.5f / 30f);
         
 
 
@@ -127,7 +133,7 @@ public class Player1 : MonoBehaviour {
 
 
             if (enter && pressed )  {
-                if (i >= 1) {
+                if (i >= delaysecond) {
                     RaycastHit2D[] f = Physics2D.RaycastAll(transform.position, transform.right, 1000f);
                     for (int ix = 0; ix < f.Length; ix++)
                     {
