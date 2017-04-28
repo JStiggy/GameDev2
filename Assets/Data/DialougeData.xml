@@ -12,7 +12,7 @@ ERROR: Auxiliary functions missing...
         </text>
         <text>------ Disabled Barrier Systems
 ------ Vision Systems minimized
-Boot Sequence completed with 23 errors
+Boot Sequence completed with 14 errors
         </text>
        </text>
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
@@ -36,7 +36,7 @@ Sight Systems repaired
     //2: First conversation with Mainframe
     <Dialouge>
       <text>
-        <text>*BEEP BOOP*
+        <text> I neeed sushi!!
         </text>
 
       </text>
@@ -46,7 +46,7 @@ Sight Systems repaired
     //3: Mainframe up until you get power core
     <Dialouge>
       <text>
-        <text>WOAH, LOOKING COOL, JOKER!
+        <text> Woah, Looking cool, Joker!
         </text>
 
       </text>
@@ -58,8 +58,36 @@ Sight Systems repaired
     //4: Mainframe after power core
     <Dialouge>
       <text>
-        <text>Something Something betrayal, power core etc
+        <text> Now's our chance to strike! Go!
         </text>
+
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+
+  //5: Magnet Machine explodes, Mainframe expresses concern
+    <Dialouge>
+      <text>
+        <text> Gah... I got too reckless... I'll back out and focus on support!
+        </text>
+
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+//6: Mainframe ponders at Hover Room
+    <Dialouge>
+      <text>
+        <text> Its almost scary how good I am!
+        </text>
+
 
       </text>
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
