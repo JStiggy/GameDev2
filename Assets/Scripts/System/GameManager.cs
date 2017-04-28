@@ -28,14 +28,13 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        print("Called");
-        SceneManager.sceneLoaded += FadeIn;
         if (manager != this && manager != null)
         {
             Destroy(this.gameObject);
         }
         else
         {
+            SceneManager.sceneLoaded += FadeIn;
             manager = this;
             DontDestroyOnLoad(this.gameObject);
 
@@ -43,8 +42,8 @@ public class GameManager : MonoBehaviour
 
             HandleSaveData();
             //ENABLED IN FINAL VERSION
-            //xPos = playerData.saveXPosition;
-            //yPos = playerData.saveYPosition;
+            xPos = playerData.saveXPosition;
+            yPos = playerData.saveYPosition;
         }
     }
 
@@ -61,7 +60,7 @@ public class GameManager : MonoBehaviour
 
     public void PlacePlayer(float xPos, float yPos)
     {
-
+        print("Placed player " + xPos + ", " + yPos);
         playerReference.transform.position = new Vector3(xPos, yPos);
     }
 
@@ -74,17 +73,17 @@ public class GameManager : MonoBehaviour
     {
             
         //For alpha REMOVED IN FINAL VERSION
-       // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-       // playerReference = GameObject.FindGameObjectWithTag("Player");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //playerReference = GameObject.FindGameObjectWithTag("Player");
         //PlacePlayer(xPos, yPos);
 
         //For final version, ENABLED IN FINAL VERSION
-        //xPos = playerData.saveXPosition;
-        //yPos = playerData.saveYPosition;
-        //playerData = playerData.Load();
-        //SceneManager.LoadScene(playerData.saveScene);
-        //playerReference = GameObject.FindGameObjectWithTag("Player");
-        //PlacePlayer(xPos, yPos);
+        xPos = playerData.saveXPosition;
+        yPos = playerData.saveYPosition;
+        playerData = playerData.Load();
+        SceneManager.LoadScene(playerData.saveScene);
+        playerReference = GameObject.FindGameObjectWithTag("Player");
+        PlacePlayer(xPos, yPos);
     }
 
     public void DecreaseEnergy(float energyConsumption)
@@ -105,7 +104,7 @@ public class GameManager : MonoBehaviour
         object[] tmp = { -1, null };
         GetComponent<FadeSystem>().StartCoroutine("PerformFade", tmp);
         //EMABLED IN FINAL VERSION
-        //PlacePlayer(xPos, yPos);
+        PlacePlayer(xPos, yPos);
     }
 
     public void FadeOut(string scene)

@@ -20,11 +20,13 @@ public class DialougeSystem : MonoBehaviour {
         stream.Close();
         img = this.GetComponent<Image>();
         displayText = GetComponentInChildren<Text>();
+        print("C: " +dialougeData.Dialouges.Count);
     }
 
     IEnumerator PrintDialouge(int dialougeIndex)
     {
-        Dialouge dialouge = dialougeData.Dialouges[0];
+        GameObject.FindObjectOfType<PlayerController>().control = false;
+        Dialouge dialouge = dialougeData.Dialouges[dialougeIndex];
 
         img.enabled = true;
 
@@ -55,5 +57,6 @@ public class DialougeSystem : MonoBehaviour {
             }
         }
         img.enabled = false;
+        GameObject.FindObjectOfType<PlayerController>().control = true;
     }
 }
