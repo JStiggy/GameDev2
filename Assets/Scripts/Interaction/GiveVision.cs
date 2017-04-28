@@ -17,15 +17,11 @@ public class GiveVision : Interactable
 
     public override IEnumerator Interact()
     {
-        DialougeSystem sys = GameObject.Find("Dialouge System").GetComponent<DialougeSystem>();
-        sys.StartCoroutine("PrintDialouge", 0);
-
-        GameManager.FindObjectOfType<PlayerController>().AbilityCooldown.Vision = true;
-
+        //Would enable Vision here
         door.StartCoroutine("Interact");
         Destroy(this.gameObject);
         GameManager.Manager.playerData.saveFlags = GameManager.Manager.playerData.saveFlags | ((long)1 << 33);
-        GameManager.Manager.playerData.Save(); //This would save it but need to test everything
+        //GameManager.Manager.playerData.Save(); //This would save it but need to test everything
         return null;
     }
 }

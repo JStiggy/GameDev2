@@ -12,7 +12,6 @@ public class CoolDown
 	public bool Glide = false;
 	public bool Boost = false;
 	public bool Shield = false;
-    public bool jump = false;
 }
 
 public class PlayerController : MonoBehaviour
@@ -77,19 +76,10 @@ public class PlayerController : MonoBehaviour
 		return shield_on;
 	}
 
-    void Start()
+    void Awake()
     {
-        data = GameManager.Manager;
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
-
-        AbilityCooldown.Magnitize = (((long)1 << 1) & GameManager.Manager.playerData.saveFlags) > 0;
-        AbilityCooldown.Vision = (((long)1 << 33) & GameManager.Manager.playerData.saveFlags) > 0;
-        AbilityCooldown.Glide = (((long)1 << 34) & GameManager.Manager.playerData.saveFlags) > 0;
-        AbilityCooldown.jump = (((long)1 << 35) & GameManager.Manager.playerData.saveFlags) > 0;
-        AbilityCooldown.Shield = (((long)1 << 36) & GameManager.Manager.playerData.saveFlags) > 0;
-        AbilityCooldown.Boost = (((long)1 << 37) & GameManager.Manager.playerData.saveFlags) > 0;
-
         UI = GameObject.Find("UI");
         Transform[] ts = UI.transform.GetComponentsInChildren<Transform>();
         foreach (Transform t in ts)
@@ -150,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
 		//Gliding status test
         EndGlide = Input.GetKeyUp(KeyCode.U) || Grounded;
-        Glide = Input.GetKey(KeyCode.U) && !Grounded && AbilityCooldown.Glide;
+        Glide = Input.GetKey(KeyCode.U) && !Grounded;
 
         anim.SetBool("grounded", Grounded);
         anim.SetBool("gliding", Glide);
@@ -178,7 +168,7 @@ public class PlayerController : MonoBehaviour
             shield.SetActive(false);
         }
 
-        if(Input.GetKeyDown(KeyCode.K) && AbilityCooldown.Shield)
+        if(Input.GetKeyDown(KeyCode.K))
         {
             shield_on = !shield_on;
             Color temp = barrier.GetComponent<Image>().color;
@@ -196,7 +186,7 @@ public class PlayerController : MonoBehaviour
             activate = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.I) && magObj == null && AbilityCooldown.Magnitize)
+        if (Input.GetKeyDown(KeyCode.I) && magObj == null)
         {
             Collider2D col = Physics2D.OverlapCircle(transform.position + transform.right * facingDirection * .5f, .4f, 1 << 12);
             if (col != null)
@@ -208,7 +198,7 @@ public class PlayerController : MonoBehaviour
                 magnet.GetComponent<Image>().color = temp;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.I) && magObj != null && AbilityCooldown.Magnitize)
+        else if (Input.GetKeyDown(KeyCode.I) && magObj != null)
         {
             magObj.magnetized = false;
             magObj = null;
@@ -217,7 +207,7 @@ public class PlayerController : MonoBehaviour
             magnet.GetComponent<Image>().color = temp;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && !BasicJump && !EnhancedJump && AbilityCooldown.jump)
+        if(Input.GetKeyDown(KeyCode.Space) && !BasicJump && !EnhancedJump)
         {
             if (Grounded)
             {
@@ -230,7 +220,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-		if(Input.GetKeyDown(KeyCode.J) && boost <= 0f && AbilityCooldown.Boost)
+		if(Input.GetKeyDown(KeyCode.J) && boost <= 0f)
         {
 			boost = BoostDuration;
         }

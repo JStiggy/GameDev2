@@ -73,8 +73,13 @@ public class GameManager : MonoBehaviour
     {
             
         //For alpha REMOVED IN FINAL VERSION
+<<<<<<< HEAD
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //playerReference = GameObject.FindGameObjectWithTag("Player");
+=======
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        playerReference = GameObject.FindGameObjectWithTag("Player");
+>>>>>>> origin/master
         //PlacePlayer(xPos, yPos);
 
         //For final version, ENABLED IN FINAL VERSION
