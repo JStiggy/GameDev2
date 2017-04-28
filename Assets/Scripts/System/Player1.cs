@@ -21,7 +21,7 @@ public class Player1 : MonoBehaviour {
     bool initiate = false;
     public float maxangle = 90;
     bool done;
-    public float delaysecond=1;
+    private float delaysecond=.5f;
     Rigidbody2D rb;
     // Use this for initialization
 
