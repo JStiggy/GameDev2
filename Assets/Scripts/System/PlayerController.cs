@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour
         if (!control)
         {
             anim.SetFloat("xVel", 0);
+            anim.SetBool("grounded", Grounded);
             return;
         }
 

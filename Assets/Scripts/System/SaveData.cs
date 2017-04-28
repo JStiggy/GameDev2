@@ -14,9 +14,9 @@ public class SaveData : ISerializable
     public long saveFlags = 0;
     public float energyReserve = 100f;
 
-    public string saveScene = "LabTestRoom";
-    public float saveXPosition = 1f;
-    public float saveYPosition = 1f;
+    public string saveScene = "Start Room";
+    public float saveXPosition = -6.82f;
+    public float saveYPosition = -3.73f;
 
     public int[,] mapData = new int[5, 5]
     {

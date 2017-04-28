@@ -36,6 +36,7 @@ public class Elevator : Interactable {
     {
         GameManager.Manager.xPos = this.nextXPos;
         GameManager.Manager.yPos = this.nextYPos;
+        print(nextXPos + " " + nextYPos);
         GameManager.Manager.FadeOut(nextScene);
     }
 }

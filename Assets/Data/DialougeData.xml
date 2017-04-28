@@ -2,11 +2,10 @@
  	<Dialouges>
     
     //Copy from here to the /dialouge tag in order to add more dialouge to the game
+    
+    //0: Appears on starting a new game
  		<Dialouge>
       <text>
-        //First box to display, Note: an enter is added so that it displays in with a newline
-        // Text trigger: Upon entering Inspection Chamber (White walled room with a blue window)
-        // Text source: The researcher standing looking out the window
         <text>Initiating Boot Sequence...
 ERROR: Insufficient memory
 ERROR: Auxiliary functions missing...
@@ -18,14 +17,12 @@ Boot Sequence completed with 23 errors
        </text>
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
       //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
-      <autoScroll> 2 </autoScroll>
+      <autoScroll> 1 </autoScroll>
     </Dialouge>
 
+    //1: Gained upon getting Eyesight
     <Dialouge>
       <text>
-        //First box to display, Note: an enter is added so that it displays in with a newline
-        // Text trigger: Upon entering Inspection Chamber (White walled room with a blue window)
-        // Text source: The researcher standing looking out the window
         <text>Initiating Updates...
 Sight Systems repaired
         </text>
@@ -33,8 +30,42 @@ Sight Systems repaired
       </text>
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
       //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
-      <autoScroll> 2 </autoScroll>
+      <autoScroll> 1 </autoScroll>
     </Dialouge>
 
+    //2: First conversation with Mainframe
+    <Dialouge>
+      <text>
+        <text>*BEEP BOOP*
+        </text>
+
+      </text>
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+    //3: Mainframe up until you get power core
+    <Dialouge>
+      <text>
+        <text>WOAH, LOOKING COOL, JOKER!
+        </text>
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+    //4: Mainframe after power core
+    <Dialouge>
+      <text>
+        <text>Something Something betrayal, power core etc
+        </text>
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+    
   </Dialouges>
  </DialougeData>

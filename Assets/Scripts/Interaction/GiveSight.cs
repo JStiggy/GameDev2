@@ -18,6 +18,8 @@ public class GiveSight : Interactable
         GameObject.FindGameObjectWithTag("Player").GetComponent<CreateShadows>().distance = 5;
         Destroy(this.gameObject);
         GameManager.Manager.playerData.saveFlags = GameManager.Manager.playerData.saveFlags | ((long)1 << 32);
+        print(((long)1 << 32) & GameManager.Manager.playerData.saveFlags);
+        GameObject.Find("Dialouge System").GetComponent<DialougeSystem>().StartCoroutine("PrintDialouge", 1);
         GameManager.Manager.playerData.Save(); //This would save it but need to test everything
         return null;
     }

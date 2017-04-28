@@ -46,9 +46,12 @@ public class Activatable : MonoBehaviour {
             print("Test");
             foreach (Interactable i in interactableObjects)
             {
-                i.StopAllCoroutines();
-                i.StartCoroutine("Interact");
-                interactButton.SetActive(false);
+                if(i != null)
+                {
+                    i.StopAllCoroutines();
+                    i.StartCoroutine("Interact");
+                    interactButton.SetActive(false);
+                }
             }
         }
     }

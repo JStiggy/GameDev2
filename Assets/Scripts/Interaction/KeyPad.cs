@@ -62,13 +62,13 @@ public class KeyPad : Interactable {
             if(input.Count >= 4)
             {
                 img.sprite = animations[4];
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(.75f);
                 print(string.Join("",input.ToArray()).Equals(answer));
                 if(string.Join("", input.ToArray()) == answer)
                 {
 
                     img.sprite = animations[5];
-                    yield return new WaitForSeconds(2);
+                    yield return new WaitForSeconds(.75f);
                     foreach (Interactable i in interact)
                     {
                         i.StartCoroutine("Interact");
