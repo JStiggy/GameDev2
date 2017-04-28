@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
         AbilityCooldown.jump = (((long)1 << 35) & GameManager.Manager.playerData.saveFlags) > 0;
         AbilityCooldown.Shield = (((long)1 << 36) & GameManager.Manager.playerData.saveFlags) > 0;
         AbilityCooldown.Boost = (((long)1 << 37) & GameManager.Manager.playerData.saveFlags) > 0;
-        print(AbilityCooldown.Magnitize);
+
         activate = false;
         if (!control)
         {

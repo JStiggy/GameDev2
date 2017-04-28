@@ -38,19 +38,19 @@ public class KeyPad : Interactable {
             buttonPresses[location].enabled = false;
 
             img.sprite = animations[input.Count];
-            if(Input.GetKeyDown(KeyCode.S))
+            if(Input.GetKeyDown(KeyCode.DownArrow))
             {
                 location = mod(location + 3, 9);
             }
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 location = mod(location - 3, 9);
             }
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 location = mod(location - 1, 9);
             }
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
 
                 location = mod(location + 1, 9);
