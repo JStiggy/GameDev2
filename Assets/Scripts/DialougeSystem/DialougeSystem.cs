@@ -10,7 +10,7 @@ public class DialougeSystem : MonoBehaviour {
     public DialougeData dialougeData;
     private Image img;
     private Text displayText;
-    private float waitTime = .05f;
+    private float waitTime = .01f;
 
 	// Use this for initialization
 	void Awake () {
@@ -20,6 +20,7 @@ public class DialougeSystem : MonoBehaviour {
         stream.Close();
         img = this.GetComponent<Image>();
         displayText = GetComponentInChildren<Text>();
+        displayText.fontSize = 18;
     }
 
     IEnumerator PrintDialouge(int dialougeIndex)
