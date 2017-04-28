@@ -9,6 +9,8 @@ public class MoveObject : Interactable
     public bool constantMotion = true;
     public bool startMoving = false;
 
+    public bool updateX = true;
+
     public Vector3 locationA;
     public Vector3 locationB;
     [HideInInspector]
@@ -24,6 +26,12 @@ public class MoveObject : Interactable
 
     public override IEnumerator Interact()
     {
+        if(!updateX)
+        {
+            locationA.x = transform.position.x;
+            locationB.x = transform.position.x;
+        }
+
         Vector3 dest = aStart ? locationB : locationA;
         Vector3 start = aStart ? locationA : locationB;
         float currentDist;
