@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class TitleUIManager : MonoBehaviour {
 
+    public void Update()
+    {
+        if(Input.anyKey)
+        {
+            LoadGame();
+        }
+    }
+
 	// Use this for initialization
 	public void LoadGame() {
         SaveData playerData = new SaveData();
