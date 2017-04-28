@@ -9,7 +9,8 @@ public class ActivateObject : MonoBehaviour {
     {
         if((((long)1 << 3) & GameManager.Manager.playerData.saveFlags) > 0)
         {
-            GetComponent<Activatable>().enabled = true;
+            GetComponent<Activatable>().interactableObjects = new Interactable[1];
+            GetComponent<Activatable>().interactableObjects[0] = GetComponent<Elevator>();
             Destroy(this);
         }
     }

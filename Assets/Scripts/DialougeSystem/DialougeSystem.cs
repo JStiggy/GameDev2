@@ -20,7 +20,6 @@ public class DialougeSystem : MonoBehaviour {
         stream.Close();
         img = this.GetComponent<Image>();
         displayText = GetComponentInChildren<Text>();
-        print("C: " +dialougeData.Dialouges.Count);
     }
 
     IEnumerator PrintDialouge(int dialougeIndex)

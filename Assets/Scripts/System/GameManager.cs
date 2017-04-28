@@ -60,7 +60,6 @@ public class GameManager : MonoBehaviour
 
     public void PlacePlayer(float xPos, float yPos)
     {
-        print("Placed player " + xPos + ", " + yPos);
         playerReference.transform.position = new Vector3(xPos, yPos);
     }
 

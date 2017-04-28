@@ -15,13 +15,11 @@ public class InteractionDialouge : Interactable {
         //If dialouge seen delete trigger (Assuming non repeatable)
         if ((((long)1 << SaveFlag) & GameManager.Manager.playerData.saveFlags) > 0)
         {
-            print("Not replaying, seen");
             Destroy(this);
         }
         //If prereq not met remove trigger
         if ((((long)1 << PrereqFlag) & GameManager.Manager.playerData.saveFlags) == 0)
         {
-            print("Not playing, prereq not met");
             Destroy(this);
         }
     }

@@ -43,7 +43,6 @@ public class Activatable : MonoBehaviour {
     {
         if (collider.gameObject.tag == "Player" && collider.gameObject.GetComponent<PlayerController>().activate && interactButton.activeInHierarchy)
         {
-            print("Test");
             foreach (Interactable i in interactableObjects)
             {
                 if(i != null)

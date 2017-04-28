@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elevator : Interactable {
+public class Entrance : Interactable {
 
-    Animator anim = null;
     bool playerFade = true;
     GameObject player = null;
     public string nextScene;
@@ -15,10 +14,10 @@ public class Elevator : Interactable {
     {
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player");
-        if (anim == null)
-            anim = this.GetComponent<Animator>();
         player.GetComponent<PlayerController>().control = false;
-        anim.SetTrigger("Activated");
+        FadePlayer();
+        yield return new WaitForSeconds(1f);
+        ChangeScene();
         yield return null;
     }
 
