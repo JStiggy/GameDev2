@@ -19,6 +19,7 @@ public class Laser : MonoBehaviour {
        lr.SetPosition(1, direction * value.distance);
        if(value.transform.tag == "Player")
        {
+            value.transform.GetComponent<CapsuleCollider2D>().enabled = false;
             value.transform.GetComponent<BoxCollider2D>().enabled = false;
             GameManager.Manager.ReloadGame();
             GameManager.Manager.playerReference.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
