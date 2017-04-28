@@ -39,6 +39,7 @@ public class Player1 : MonoBehaviour {
     private void Start()
     {
         done = false;
+        lr.startWidth = 0;
     }
 
     // Update is called once per frame
@@ -131,19 +132,8 @@ public class Player1 : MonoBehaviour {
                     for (int ix = 0; ix < f.Length; ix++)
                     {
                     print(f[ix].collider.name);
-                    if (f[ix].collider.name == "shield_test")
-                    {
-                       
-                        Vector3 v = transform.right.normalized;
-                        lr.SetPosition(0, forw.transform.position);
-
-                        lr.SetPosition(1, f[ix].point);
-                        i = 0;
-                        lr.startWidth = 0.15f;
-                        i = 0;
-                        break;
-                    }
-                    else if (f[ix].collider.tag == "Player")
+                    
+                    if (f[ix].collider.tag == "Player")
                     {
 
                         Vector3 v = transform.right.normalized;
@@ -154,7 +144,7 @@ public class Player1 : MonoBehaviour {
                         lr.startWidth = 0.15f;
                         i = 0;
                         if (f[ix].collider.gameObject.GetComponent<PlayerController>().GetShieldOn() == false)
-                        { GameManager.Manager.FadeOut(SceneManager.GetActiveScene().name); return; }
+                        { GameManager.Manager.ReloadGame(); ; return; }
                         break;
                     }
                     else
