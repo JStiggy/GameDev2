@@ -5,12 +5,13 @@ using UnityEngine;
 public class InvisibleTrigger : MonoBehaviour {
 
     public bool OneTime = true;
+    public bool dest = true;
     public int SaveFlag = 63;
     public Interactable[] interactableObjects;
 
     // Use this for initialization
     void Start () {
-		if( (((long)1 << SaveFlag) & GameManager.Manager.playerData.saveFlags) > 0)
+		if( (((long)1 << SaveFlag) & GameManager.Manager.playerData.saveFlags) > 0 && dest)
         {
             Destroy(gameObject);
         }

@@ -47,7 +47,7 @@ public class Activatable : MonoBehaviour {
             {
                 if(i != null)
                 {
-                    i.StopAllCoroutines();
+                    i.StopCoroutine("Interact");
                     i.StartCoroutine("Interact");
                     interactButton.SetActive(false);
                 }
