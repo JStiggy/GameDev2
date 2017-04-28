@@ -6,7 +6,8 @@ public class GiveMagnetization : Interactable {
 
     public override IEnumerator Interact()
     {
-        //Would enable Magnetization here
+        DialougeSystem sys = GameObject.Find("Dialouge System").GetComponent<DialougeSystem>();
+        sys.StartCoroutine("PrintDialouge", 7);
         Destroy(this.gameObject);
         return null;
     }

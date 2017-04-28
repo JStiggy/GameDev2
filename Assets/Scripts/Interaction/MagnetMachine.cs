@@ -23,6 +23,8 @@ public class MagnetMachine : Interactable
         yield return new WaitForSeconds(1);
         Instantiate(popoffMagPanel, new Vector3(transform.position.x, transform.position.y, -2f), Quaternion.identity);
         gameObject.GetComponent<SpriteRenderer>().sprite = ExplodedTexture;
+        DialougeSystem sys = GameObject.Find("Dialouge System").GetComponent<DialougeSystem>();
+        sys.StartCoroutine("PrintDialouge", 5);
         Instantiate(magnetChip, new Vector3(transform.position.x, transform.position.y, -2f), Quaternion.identity);
         yield return null;
     }

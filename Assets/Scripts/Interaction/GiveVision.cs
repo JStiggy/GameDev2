@@ -18,7 +18,7 @@ public class GiveVision : Interactable
     public override IEnumerator Interact()
     {
         DialougeSystem sys = GameObject.Find("Dialouge System").GetComponent<DialougeSystem>();
-        sys.StartCoroutine("PrintDialouge", 0);
+        sys.StartCoroutine("PrintDialouge", 8);
 
         GameManager.FindObjectOfType<PlayerController>().AbilityCooldown.Vision = true;
 

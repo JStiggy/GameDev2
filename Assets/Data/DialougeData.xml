@@ -84,8 +84,43 @@ Sight Systems repaired
 
 //6: Mainframe ponders at Hover Room
     <Dialouge>
+      <text>//You did not add enough
+        <text>
+          Its almost scary how good I am!Its almost scary how good I am!
+          Its almost scary how good I am!Its almost scary how good I am!
+          Its almost scary how good I am!Its almost scary how good I am!
+        </text>
+
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+    //7: Gain Magnetism
+    <Dialouge>
       <text>
-        <text> Its almost scary how good I am!
+        
+        <text>Initiating Updates...
+Magnetism Systems gained
+Use I to magnetize objects, press once more to remote demagnetize
+        </text>
+
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+
+    //8: Gain IR Vision
+    <Dialouge>
+      <text>
+
+        <text>Initiating Updates...
+Vision System capabilites fully restored
+Detect meanings outside of normal vision by pressing P
         </text>
 
 
