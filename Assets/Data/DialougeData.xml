@@ -7,16 +7,34 @@
         //First box to display, Note: an enter is added so that it displays in with a newline
         // Text trigger: Upon entering Inspection Chamber (White walled room with a blue window)
         // Text source: The researcher standing looking out the window
-        <text>Good job N-01X.
-Please proceed to the recharging station 
-and deactivate yourself for inspection.</text>
+        <text>Initiating Boot Sequence...
+ERROR: Insufficient memory
+ERROR: Auxiliary functions missing...
+        </text>
+        <text>------ Disabled Barrier Systems
+------ Vision Systems minimized
+Boot Sequence completed with 23 errors
+        </text>
        </text>
-      
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
       //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
-      <autoScroll> 4 </autoScroll>
+      <autoScroll> 2 </autoScroll>
     </Dialouge>
-    
+
+    <Dialouge>
+      <text>
+        //First box to display, Note: an enter is added so that it displays in with a newline
+        // Text trigger: Upon entering Inspection Chamber (White walled room with a blue window)
+        // Text source: The researcher standing looking out the window
+        <text>Initiating Updates...
+Sight Systems repaired
+        </text>
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 2 </autoScroll>
+    </Dialouge>
 
   </Dialouges>
  </DialougeData>
