@@ -17,6 +17,9 @@ public class CreateShadows : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if ((((long)1 << 32) & GameManager.Manager.playerData.saveFlags) > 0)
+            distance = 5;
+
         vertices2d = new Vector2[RaysToShoot];
         mesh = lightmeshholder.GetComponent<MeshFilter>().mesh;
         lightmeshholder.layer = 13;
@@ -46,10 +49,6 @@ public class CreateShadows : MonoBehaviour
             }
             else { // no hit
                 //Debug.DrawRay (transform.position, dir*distance, new Color(1,1,0,1));
-                if(i == 0)
-                {
-                    print("No collision");
-                }
                 var tmp2 = lightmeshholder.transform.InverseTransformPoint(lightmeshholder.transform.position + dir * distance);
                 vertices[i] = new Vector3(tmp2.x, tmp2.y, 0);
             }
@@ -84,8 +83,6 @@ public class CreateShadows : MonoBehaviour
             }
             else
             {
-                if(j == 1)
-                print("No collision");
                 var tmp2 = lightmeshholder.transform.InverseTransformPoint(lightmeshholder.transform.position + dir * distance);
                 vertices2d[j] = new Vector2(tmp2.x, tmp2.z);
             }
