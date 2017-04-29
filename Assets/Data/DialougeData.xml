@@ -190,5 +190,19 @@ Create a shield to block Energy attacks from harming you
       <autoScroll> 1 </autoScroll>
     </Dialouge>
 
+    //11: Gain Boost systems
+    <Dialouge>
+      <text>
+
+        <text>Initiating Updates...
+You gained boost power
+        </text>
+
+      </text>
+      //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
+      //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
+      <autoScroll> 1 </autoScroll>
+    </Dialouge>
+    
   </Dialouges>
  </DialougeData>

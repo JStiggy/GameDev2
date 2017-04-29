@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
         AbilityCooldown.Magnitize = (((long)1 << 1) & GameManager.Manager.playerData.saveFlags) > 0;
         AbilityCooldown.Vision = (((long)1 << 33) & GameManager.Manager.playerData.saveFlags) > 0;
         AbilityCooldown.Glide = (((long)1 << 34) & GameManager.Manager.playerData.saveFlags) > 0;
-        AbilityCooldown.jump = (((long)1 << 35) & GameManager.Manager.playerData.saveFlags) > 0;
+        AbilityCooldown.jump = (((long)1 << 37) & GameManager.Manager.playerData.saveFlags) > 0;
         AbilityCooldown.Shield = (((long)1 << 36) & GameManager.Manager.playerData.saveFlags) > 0;
         AbilityCooldown.Boost = (((long)1 << 37) & GameManager.Manager.playerData.saveFlags) > 0;
 
