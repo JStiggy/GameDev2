@@ -11,23 +11,23 @@ public class CraneControl : Interactable
         GameManager.Manager.playerReference.GetComponent<PlayerController>().control = false;
         while (!Input.GetKeyDown(KeyCode.Q))
         {
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
                 transform.Translate(Vector3.down * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.UpArrow))
+            else if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 transform.Translate(Vector3.up * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 transform.Translate(Vector3.left * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 transform.Translate(Vector3.right * Time.deltaTime);
             }
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.20f, 2.85f), Mathf.Clamp(transform.position.y, 1.21f, 8.05f), 0);
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 foreach(Magnetizable m in magnet.GetComponentsInChildren<Magnetizable>())

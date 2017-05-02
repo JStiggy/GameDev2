@@ -18,13 +18,16 @@ public class SaveData : ISerializable
     public float saveXPosition = -6.82f;
     public float saveYPosition = -3.73f;
 
-    public int[,] mapData = new int[5, 5]
+    public int[,] mapData = new int[8, 8]
     {
-        { 0,0,0,0,0},
-        { 0,0,0,0,0},
-        { 0,0,0,0,0},
-        { 0,0,0,0,0},
-        { 0,0,0,0,0}
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0},
+        { 0,0,0,0,0,0,0,0}
     };
 
 
