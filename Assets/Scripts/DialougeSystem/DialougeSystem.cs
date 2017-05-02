@@ -10,7 +10,7 @@ public class DialougeSystem : MonoBehaviour {
     public DialougeData dialougeData;
     private Image img;
     private Text displayText;
-    private float waitTime = .01f;
+    private float waitTime = .005f;
 
 	// Use this for initialization
 	void Awake () {

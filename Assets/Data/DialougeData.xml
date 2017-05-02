@@ -37,21 +37,26 @@ Sight Systems repaired
     <Dialouge>
       <text>
         <text>Reinitializing... all systems successfully rebooted.
-Identifying unit... unit identified as a model NX, factory number 01.
-Hello! It has been -ERROR- years since my last activation.
-My apologies, it seems there memory leaks within my database.
+Identifying unit... 
+Unit identified as a model NX, factory number 01.
+Hello! It has been -ERROR- years since my last
+activation.
+        </text>
+        <text>My apologies, it seems there are corrupted files 
+leaks within my database.
 Locating... 
+This will take some time to fix. In the meantime, it
+appears this facility has undergone vast changes 
         </text>
-<text>This will take some time to fix.  In the meantime, it appears
-this facility has undergone vast changes during my absence.
-I am unable to detect any signs of life or map out the area.
+        <text>during my absence. I am unable to detect any 
+signs of life or map out the area.I detect that your 
+mobility functions are fully operational.
+As such, I propose that we sync up vision so I may 
+map out the area as you explore it. We robots 
+</text>
+        <text>should stick together during such unquantifiable 
+situations, after all.
         </text>
-<text>I detect that your mobility functions are fully operational.
-As such, I propose that we sync up vision so I may map out
-the area as you explore it. We robots should stick together
-during such unquantifiable situations, after all.
-	</text>
-
       </text>
       <autoScroll> 1 </autoScroll>
     </Dialouge>
@@ -59,13 +64,16 @@ during such unquantifiable situations, after all.
     //3: Mainframe up until you get power core
     <Dialouge>
       <text>
-        <text> Parsing... Oh, hello again NX-01. How goes the data-gathering?
-If you can find a path out to ground zero, I may be able to restore
-communications with the outside world. As such, please keep working hard.
-I estimate high probability that you shall succeed.
-Our creators defined this estimate as 'faith', I believe.
+        <text> Parsing... Oh, hello again NX-01. How 
+goes the data-gathering? If you can
+find a path out to ground zero, I may 
+be able to restore communications with
         </text>
-
+        <text>the outside world. As such, please keep 
+working hard. I estimate high probability that
+you shall succeed. Our creators defined this 
+estimate as 'faith', I believe.
+        </text>
       </text>
       //Number of seconds before text autoadvance, -1 means the player must manually scroll through the text
       //Any value over -1 does not prevent the player from moving ie: It advances at its own pace regardless of the player.
@@ -77,13 +85,11 @@ Our creators defined this estimate as 'faith', I believe.
       <text>
         <text> NX-01, I-  AAAAE-A-A-I-A-U-010100001101
         </text>
-<text> ......................................
-......................................
-......................................
-......................................
+        <text>
         </text>
-<text> ... Please come back with that power core, robot. It will
-grant me the resources to renable my higher energy-cost
+        <text> ... Please come back with that power
+core, robot. It will grant me the 
+resources to renable my higher energy-cost
 functions such as the one that lets me 
 re-establish contact with the humans.
         </text>
@@ -98,11 +104,11 @@ re-establish contact with the humans.
   //5: Magnet Machine explodes, Mainframe expresses concern
     <Dialouge>
       <text>
-        <text> That was quite the malfunction!
-Have you sustained any damage from the explosion, NX-01?
-I recommend heading back to the nearest recharge station
-and conducting a status check.
-        </text>
+        <text>That was quite the malfunction! Have
+you sustained any damage from the 
+explosion, NX-01? I recommend 
+heading back to the nearest recharge 
+station and conducting a status check.</text>
 
 
       </text>
@@ -114,10 +120,11 @@ and conducting a status check.
 //6: Mainframe ponders at Hover Room
     <Dialouge>
       <text>
-        <text>It is beyond any fathomable calculation of mine what
-must have occurred for the facility to change this much,
-regardless of how much the passage of time has affected it.
-I do not possess records of this testing facility in my database...
+        <text>It is beyond any fathomable calculation of mine 
+what must have occurred for the facility to change
+this much, regardless of how much the passage of 
+time has affected it. I do not possess records of this
+testing facility in my database...
         </text>
 
 
@@ -195,7 +202,7 @@ Create a shield to block Energy attacks from harming you
       <text>
 
         <text>Initiating Updates...
-You gained boost power
+You gained boost powers
         </text>
 
       </text>
