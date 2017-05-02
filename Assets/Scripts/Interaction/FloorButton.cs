@@ -28,14 +28,14 @@ public class FloorButton : MonoBehaviour
        }
     }
 
-    public virtual void OnTriggerExit2D(Collider2D collider)
-    {
-        anim.SetBool("Activated", true);
-        foreach (Interactable i in interactableObjects)
-        {
-            i.StopAllCoroutines();
-            i.StartCoroutine("Interact");
-        }
-    }
+    //public virtual void OnTriggerExit2D(Collider2D collider)
+    //{
+    //    anim.SetBool("Activated", true);
+    //    foreach (Interactable i in interactableObjects)
+    //    {
+    //        i.StopAllCoroutines();
+    //        i.StartCoroutine("Interact");
+    //    }
+    //}
 
 }

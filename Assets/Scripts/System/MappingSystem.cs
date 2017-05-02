@@ -10,14 +10,14 @@ public class MappingSystem : MonoBehaviour {
 
     private int[,] mapData = new int[8, 8]
     {
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0},
-        { 0,0,0,0,0,0,0,0}
+        {-1,-1,-1,-1,-1,-1,-1,-1},
+        {-1,-1,-1,-1,-1,-1, 0, 2},
+        {-1,-1,-1,-1,-1, 0, 6, 8},
+        { 0, 2,-1,-1,-1, 3,-1,-1},
+        { 6, 8, 0, 2,-1, 3,-1,-1},
+        { 0, 2, 6, 8,-1, 6,-1,-1},
+        { 6, 8, 0, 1, 2, 0, 2,-1},
+        {-1,-1, 0, 2,-1, 6, 8,-1}
     };
 
     private Image[] uiIcons;
@@ -25,20 +25,22 @@ public class MappingSystem : MonoBehaviour {
     // Use this for initialization
     void Start () {
         int count = 0;
-        uiIcons = new Image[25];
-        for(int i = 0; i < 5; ++i)
+        uiIcons = new Image[64];
+        for(int i = 0; i < 8; ++i)
         {
-            for(int j = 0; j < 5; ++j)
+            for(int j = 0; j < 8; ++j)
             {
                 if (mapData[i, j] != -1)
                 {
-                    GameObject tmp = Instantiate(mapTile, new Vector3(900 + 20 * j, -150 - 20 * i, 0) + transform.position, Quaternion.identity);
+                    GameObject tmp = Instantiate(mapTile, new Vector3(600 + 20 * j, -100 - 20 * i, 0) + transform.position, Quaternion.identity);
                     tmp.transform.SetParent(this.transform, true);
                     uiIcons[count] = tmp.GetComponent<Image>();
+                    tmp.GetComponent<Image>().sprite = mapTextures[mapData[i, j]];
                     tmp.SetActive(false);
                 }
                 else
                 {
+                    print("s");
                     uiIcons[count] = null;
                 }
                 ++count;
@@ -52,11 +54,11 @@ public class MappingSystem : MonoBehaviour {
     void Update()
     {
         int count = 0;
-        for (int i = 0; i < 5; ++i)
+        for (int i = 0; i < 8; ++i)
         {
-            for (int j = 0; j < 5; ++j)
+            for (int j = 0; j < 8; ++j)
             {
-                if(GameManager.Manager.playerData.mapData[i,j] == 1 && uiIcons[count] != null && mapData[i,j] != -1)
+                if (GameManager.Manager.playerData.mapData[i,j] == 1 && uiIcons[count] != null && mapData[i,j] != -1)
                 {
                     uiIcons[count].sprite = mapTextures[mapData[i,j]];
                     uiIcons[count].gameObject.SetActive(true);

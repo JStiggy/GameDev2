@@ -15,7 +15,7 @@ public class GiveBoost : Interactable
     public override IEnumerator Interact()
     {
         DialougeSystem sys = GameObject.Find("Dialouge System").GetComponent<DialougeSystem>();
-        sys.StartCoroutine("PrintDialouge", 10);
+        sys.StartCoroutine("PrintDialouge", 11);
 
         GameManager.FindObjectOfType<PlayerController>().AbilityCooldown.Glide = true;
 

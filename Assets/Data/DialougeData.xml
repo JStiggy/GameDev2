@@ -170,10 +170,9 @@ Detect meanings outside of normal vision by pressing P
     <Dialouge>
       <text>
 
-        <text>
-          Initiating Updates...
-          Propulsion System functions restored
-          Slow descent and traverse gaps by using U
+        <text>Initiating Updates...
+Propulsion System functions restored
+Slow descent and traverse gaps by using U
         </text>
 
       </text>
@@ -202,7 +201,7 @@ Create a shield to block Energy attacks from harming you
       <text>
 
         <text>Initiating Updates...
-You gained boost powers
+Auxiliary movement systems enabled
         </text>
 
       </text>

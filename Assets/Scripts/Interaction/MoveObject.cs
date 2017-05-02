@@ -47,7 +47,7 @@ public class MoveObject : Interactable
             {
                 break;
             }
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
         aStart = !aStart;
         transform.position = dest;

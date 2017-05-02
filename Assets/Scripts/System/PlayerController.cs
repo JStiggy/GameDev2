@@ -280,14 +280,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-	//For currect velocity detection
-	void OnCollisionEnter2D(Collision2D col)
+    //For currect velocity detection
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Ground")
+        {
+            Grounded = true;
+            if (rb.velocity.y >= FatalYVelocity)
+            {
+            }
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Ground") {
 			Grounded = true;
 			if (rb.velocity.y >= FatalYVelocity) 
 			{
-				Debug.Log ("Dead");
+
 			}
 		}
 	}
